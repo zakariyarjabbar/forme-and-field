@@ -11,7 +11,8 @@ The user's latest instruction replaces all database storage with local browser d
 - [x] Updated demo/policy copy and architecture for browser-owned data with no seven-day expiration.
 - [x] Final typecheck, lint, 11 local-state tests and production build passed.
 - [x] 11 browser journeys, 35 viewport checks, 18 axe scans and 16 social-preview checks passed.
-- [ ] GitHub push and linked Vercel deployment verification.
+- [x] Database-free application pushed to private GitHub (a49b302). Vercel automatically started deploying the commit.
+- Deployment verification is in progress; local checks above are complete.
 
 No Supabase/Neon account is needed. The Vercel deployment should use Next.js defaults, with NEXT_PUBLIC_SITE_URL set to the public origin or omitted for automatic detection. Remove stale database/cookie variables. Old local SQLite data is left on disk but unused and untracked.
 
