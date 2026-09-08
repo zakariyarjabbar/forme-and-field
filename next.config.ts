@@ -1,7 +1,6 @@
 import type { NextConfig } from 'next';
 const config: NextConfig = {
   devIndicators: false,
-  serverExternalPackages: ['better-sqlite3'],
   poweredByHeader: false,
   images: { formats: ['image/avif', 'image/webp'] },
   async headers() {

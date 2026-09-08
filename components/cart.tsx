@@ -21,6 +21,12 @@ export function Cart() {
       setBusy(false);
     }
   }
+  if (!store.ready)
+    return (
+      <div className="empty-state" role="status">
+        Loading your saved bag…
+      </div>
+    );
   if (!store.cart.length)
     return (
       <div className="empty-state">

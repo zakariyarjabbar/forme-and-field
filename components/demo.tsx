@@ -101,10 +101,11 @@ export function DemoEntry({ destination = '/account' }: { destination?: string }
         </div>
       </div>
       <p className="small muted">
-        Your session expires after seven days. This is a demonstration identity, not production
-        customer authentication. Messages stay in a local outbox; no emails are sent.
+        Your demo is saved only in this browser. Tabs on this site share it; other browsers and
+        devices do not. Clearing site data or resetting the demo removes it. There is no login or
+        server database. No emails are sent.
       </p>
-      {store.hasWorkspace && (
+      {(store.hasWorkspace || store.storageError) && (
         <div className="reset-zone">
           <h2>Start with a clean room.</h2>
           <p className="muted">

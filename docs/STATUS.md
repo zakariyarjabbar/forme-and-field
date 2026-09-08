@@ -1,31 +1,18 @@
 # Status
 
-**Local implementation complete and verified — 2026-09-08.**
+## Browser-local migration — 2026-09-08
 
-- [x] Durable instructions, approved brief, product scope and actual design system.
-- [x] 24 products, 48 finish variants, three collections, three shoppable rooms and three full journal articles.
-- [x] 24 primary images, six alternate/detail galleries, three room scenes, favicon/social treatment, retained asset prompts/source atlases/licenses.
-- [x] All requested storefront, editorial, information, customer and merchant route families.
-- [x] URL filters/search/sort; finish selection; gallery zoom; persistent bag and wishlist; accessible dialogs and room review.
-- [x] SQLite/Drizzle persistence, numbered migrations, deterministic seed, isolated seven-day demo sessions and scoped reset/cleanup.
-- [x] Validated guest checkout, success/decline simulation, idempotency, stock competition protection, snapshots, cancellation/refund and exact stock restoration.
-- [x] Account/profile/addresses/orders; merchant product creation/edit/archive, variant inventory/prices, order transitions, inquiries/outbox/activity.
-- [x] Typecheck, lint, production build; 19 focused tests; 8 end-to-end tests.
-- [x] 35 route/viewport checks without broken images, overflow or page errors; 18 axe scans with zero final violations.
-- [x] Lighthouse mobile Performance 94 homepage / 94 product; zero measured CLS; actual reports retained.
-- [x] README, architecture, assets, QA, portfolio screenshots and factual case-study draft.
+The user's latest instruction replaces all database storage with local browser data. The private GitHub repository remains https://github.com/zakariyarjabbar/forme-and-field.
 
-Preview: `http://localhost:3000`. Run with `npm run dev`, or `npm run build` then `npm run start`. Enter `/demo` to explore customer and merchant views. The GitHub repository is private at the user’s request; website deployment remains unconfigured.
+- [x] Removed database dependencies, runtime filesystem writes, server commerce APIs, session cookies and database scripts.
+- [x] Versioned localStorage data, validated copy-on-write actions, cross-tab Web Locks, storage-event synchronization and explicit corrupt-data reset.
+- [x] Cart/wishlist, checkout success/decline, orders/cancellation, account/addresses, admin/catalog/inventory, inquiries/outbox/activity connected to local data.
+- [x] Public seed rendering and 31 social preview cards preserved; local custom products render client-side.
+- [x] Updated demo/policy copy and architecture for browser-owned data with no seven-day expiration.
+- [x] Final typecheck, lint, 11 local-state tests and production build passed.
+- [x] 11 browser journeys, 35 viewport checks, 18 axe scans and 16 social-preview checks passed.
+- [ ] GitHub push and linked Vercel deployment verification.
 
-Known limitations: native 512×512 product panels, finish swatches where exact alternate photography is absent, Chrome-only browser verification, seven-day demo identity instead of real authentication. External Stripe, email delivery and public hosting are unimplemented/unconfigured by the approved scope; the credential-free local default is complete.
+No Supabase/Neon account is needed. The Vercel deployment should use Next.js defaults, with NEXT_PUBLIC_SITE_URL set to the public origin or omitted for automatic detection. Remove stale database/cookie variables. Old local SQLite data is left on disk but unused and untracked.
 
-Next action on a later session: read the project documents, verify the preview process, and respond to the user's next requested change. No required implementation step is waiting for optional provider credentials.
-
-## Social sharing and GitHub follow-up
-
-- 31 branded 1200×630 JPEG cards, shared Open Graph/Twitter metadata and route-specific product/room/article previews implemented.
-- Chat-preview crawler exceptions preserve private route exclusions and general no-index policy.
-- Private repository: https://github.com/zakariyarjabbar/forme-and-field.
-- Actual website hosting and public-origin configuration are still required for external chat previews. Repository access is restricted to authorized GitHub accounts.
-
-The repository includes source, images, documentation, tests, package.json and package-lock.json. Installed node_modules, build output, local environment files and demo databases remain excluded.
+Browser data is editable simulation state. It is shared across tabs on one origin, not across browser profiles/devices/domains. Clearing site data, eviction, private browsing cleanup or reset can remove it. No real payments, messages, authentication or cloud backup exists.

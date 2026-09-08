@@ -1,14 +1,18 @@
 'use client';
-import { createContext, useContext, useState, type ReactNode } from 'react';
-import { useRouter } from 'next/navigation';
+import { createContext, useContext, useState, useSyncExternalStore, type ReactNode } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, Minus, Plus, Trash2, Check } from 'lucide-react';
 import type { StoreState, Order } from '@/lib/types';
 import { money, pricing } from '@/lib/money';
 import { Dialog } from './dialog';
+import { shoppingState, type LocalData } from '@/lib/local/store';
+import { subscribe, getSnapshot, getServerSnapshot, mutateBrowser } from '@/lib/local/browser';
 type Result = { order?: Order; declined?: boolean; id?: string; duplicate?: boolean };
 type StoreContext = StoreState & {
+  data: LocalData;
+  ready: boolean;
+  storageError: string;
   mutate: (input: Record<string, unknown>) => Promise<Result>;
   openCart: () => void;
   closeCart: () => void;
@@ -20,26 +24,14 @@ export function useStore() {
   if (!context) throw new Error('Store provider missing.');
   return context;
 }
-export function StoreProvider({ initial, children }: { initial: StoreState; children: ReactNode }) {
-  const [current, setCurrent] = useState(initial),
-    [cartOpen, setCartOpen] = useState(false),
+export function StoreProvider({ children }: { children: ReactNode }) {
+  const snapshot = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
+  const current = shoppingState(snapshot.data);
+  const [cartOpen, setCartOpen] = useState(false),
     [notice, setNotice] = useState(''),
     [error, setError] = useState(''),
     [busy, setBusy] = useState(false);
-  const router = useRouter();
-  async function mutate(input: Record<string, unknown>) {
-    const response = await fetch('/api/demo', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(input),
-    });
-    const body = await response.json();
-    if (!response.ok)
-      throw new Error(body.error || 'The change could not be saved. Please try again.');
-    setCurrent(body.state);
-    router.refresh();
-    return body.result as Result;
-  }
+  const mutate = mutateBrowser;
   async function update(variantId: string, quantity: number, mode: 'set' | 'remove') {
     setBusy(true);
     setError('');
@@ -56,12 +48,20 @@ export function StoreProvider({ initial, children }: { initial: StoreState; chil
     <Context.Provider
       value={{
         ...current,
+        data: snapshot.data,
+        ready: snapshot.ready,
+        storageError: snapshot.error,
         mutate,
         openCart: () => setCartOpen(true),
         closeCart: () => setCartOpen(false),
         notify: setNotice,
       }}
     >
+      {snapshot.error && (
+        <div className="demo-notice" role="alert">
+          {snapshot.error} <Link href="/demo">Open demo settings</Link>
+        </div>
+      )}
       {children}
       <div className={`toast ${notice ? 'visible' : ''}`} role="status">
         {notice && (

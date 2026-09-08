@@ -3,13 +3,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { ProductCard } from '@/components/product-card';
-import { getProducts } from '@/lib/server/store';
-import { session } from '@/lib/server/session';
+import { seedProducts } from '@/lib/content/catalog';
 import { articles } from '@/lib/content/editorial';
 export const metadata = socialMetadata('FORME & FIELD', brandDescription, '/');
 export default async function Home() {
-  const ws = await session(),
-    products = getProducts(ws?.id),
+  const products = seedProducts,
     chosen = ['cove-lounge-chair', 'plinth-side-table', 'halo-pendant', 'vale-sofa']
       .map((s) => products.find((p) => p.slug === s))
       .filter((p) => !!p);

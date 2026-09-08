@@ -1,8 +1,7 @@
 import { socialMetadata } from '@/lib/social';
 import { notFound } from 'next/navigation';
 import { rooms } from '@/lib/content/editorial';
-import { getProducts } from '@/lib/server/store';
-import { session } from '@/lib/server/session';
+import { seedProducts } from '@/lib/content/catalog';
 import { RoomScene } from '@/components/rooms';
 import { ProductCard } from '@/components/product-card';
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
@@ -20,8 +19,7 @@ export default async function RoomPage({ params }: { params: Promise<{ slug: str
   const { slug } = await params,
     r = rooms.find((r) => r.slug === slug);
   if (!r) notFound();
-  const ws = await session(),
-    products = getProducts(ws?.id).filter((p) => r.products.some((rp) => rp.slug === p.slug));
+  const products = seedProducts.filter((p) => r.products.some((rp) => rp.slug === p.slug));
   return (
     <>
       <div className="page-heading">

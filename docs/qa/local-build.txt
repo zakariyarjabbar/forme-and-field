@@ -1,0 +1,51 @@
+
+> forme-and-field@1.0.0 build
+> next build
+
+▲ Next.js 16.3.4 (Turbopack)
+✓ Running next.config.ts took 12ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 1280ms
+  Running TypeScript ...
+  Finished TypeScript in 1879ms ...
+  Collecting page data using 7 workers ...
+  Generating static pages using 7 workers (0/20) ...
+  Generating static pages using 7 workers (5/20) 
+  Generating static pages using 7 workers (10/20) 
+  Generating static pages using 7 workers (15/20) 
+✓ Generating static pages using 7 workers (20/20) in 271ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /about
+├ ○ /account
+├ ƒ /account/orders/[id]
+├ ○ /admin
+├ ƒ /admin/orders/[id]
+├ ○ /care
+├ ○ /cart
+├ ○ /checkout
+├ ƒ /checkout/confirmation/[id]
+├ ƒ /collections/[slug]
+├ ○ /contact
+├ ○ /delivery-returns
+├ ○ /demo
+├ ○ /journal
+├ ƒ /journal/[slug]
+├ ○ /privacy
+├ ƒ /products/[slug]
+├ ○ /robots.txt
+├ ○ /rooms
+├ ƒ /rooms/[slug]
+├ ƒ /search
+├ ƒ /shop
+├ ○ /terms
+└ ○ /wishlist
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

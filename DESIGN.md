@@ -16,3 +16,6 @@ Visible focus, semantic landmarks, 16px body, 14px regular UI labels. Never use 
 
 ## Boundaries
 No fake evidence, gradients/glass, pill-heavy controls, carousel hero, scroll hijacking, custom cursor, intro gate or mandatory 3D. No duplicated product images representing different objects or false finish photographs. Use explicit finish swatches where exact alternate photography is absent.
+
+## Browser-local state
+Personal pages show a short loading state until saved browser data has been read. The public catalog remains server-rendered from seeded content for fast browsing and chat previews. Existing product cards, catalog filters, room selection and details update from the local catalog after hydration. Storage failures appear as actionable alerts, and malformed saved data requires an explicit reset. Demo, checkout, account and policy copy states that records stay in this browser and clearing site data removes them. No visual redesign accompanies the storage migration.

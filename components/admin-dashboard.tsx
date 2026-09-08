@@ -3,13 +3,13 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowUpRight, Plus } from 'lucide-react';
-import type { adminData } from '@/lib/server/store';
+import type { LocalData } from '@/lib/local/store';
 import type { Product } from '@/lib/types';
 import { money } from '@/lib/money';
 import { useStore } from './store-provider';
 import { AdminProductEditor } from './admin-product-editor';
 import { Dialog } from './dialog';
-type Data = ReturnType<typeof adminData>;
+type Data = Pick<LocalData, 'orders' | 'products' | 'inquiries' | 'outbox' | 'activity'>;
 const date = (s: string) =>
   new Date(s).toLocaleDateString('en-US', {
     month: 'short',

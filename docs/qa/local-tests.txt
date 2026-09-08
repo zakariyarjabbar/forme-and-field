@@ -1,0 +1,23 @@
+
+> forme-and-field@1.0.0 test
+> tsx --test tests/*.test.ts
+
+✔ fresh catalogs are independent and survive versioned serialization (6.534375ms)
+✔ cart merges, stock and quantity validation leave original untouched (3.574041ms)
+✔ room add rolls back completely when one finish is unavailable (0.702583ms)
+✔ success saves snapshots, deducts once and retries return original order (28.932167ms)
+✔ decline and duplicate decline preserve stock and bag (0.84175ms)
+✔ checkout rechecks totals, archive and delivery validation (1.332084ms)
+✔ cancel once restores stock after replenishment; shipped cannot cancel (3.005209ms)
+✔ unrelated browser order ids cannot resolve; merchant entry remains a demo gate (1.96775ms)
+✔ inquiries deduplicate and reset clears only the supplied snapshot (1.995292ms)
+✔ address changes stay local and update the profile (0.767291ms)
+✔ invalid persisted images and corrupted quantities are rejected (1.326666ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 238.791459

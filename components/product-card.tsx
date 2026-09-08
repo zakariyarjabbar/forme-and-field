@@ -8,14 +8,15 @@ import { money } from '@/lib/money';
 import { useStore } from './store-provider';
 import { Dialog } from './dialog';
 export function ProductCard({
-  product: p,
+  product: original,
   priority = false,
 }: {
   product: Product;
   priority?: boolean;
 }) {
-  const store = useStore(),
-    [quick, setQuick] = useState(false),
+  const store = useStore();
+  const p = store.data.products.find((p) => p.id === original.id) ?? original;
+  const [quick, setQuick] = useState(false),
     [selected, setSelected] = useState(p.variants[0].id),
     [busy, setBusy] = useState(false),
     [error, setError] = useState('');
@@ -43,6 +44,7 @@ export function ProductCard({
       setBusy(false);
     }
   }
+  if (p.archived) return null;
   return (
     <article className="product-card">
       <div className="product-image">

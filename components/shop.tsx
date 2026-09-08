@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { SlidersHorizontal, X, Search, ArrowRight } from 'lucide-react';
 import type { Product } from '@/lib/types';
 import { categories } from '@/lib/content/catalog';
+import { useStore } from './store-provider';
 import { ProductCard } from './product-card';
 import { Dialog } from './dialog';
 import type { Filters } from '@/lib/filters';
@@ -17,7 +18,19 @@ const materialMatches = (p: Product, m: string) => {
       ? /ceramic|stoneware/.test(s)
       : s.includes(m.toLowerCase());
 };
-export function Shop({ products, filters = {} }: { products: Product[]; filters: Filters }) {
+export function Shop({
+  products: seeded,
+  filters = {},
+  collection = false,
+}: {
+  products: Product[];
+  filters: Filters;
+  collection?: boolean;
+}) {
+  const store = useStore();
+  const products = store.data.products.filter(
+    (p) => !p.archived && (!collection || seeded.some((x) => x.id === p.id)),
+  );
   const [isPending, startTransition] = useTransition();
   const pathname = usePathname(),
     router = useRouter(),

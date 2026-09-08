@@ -1,19 +1,24 @@
 'use client';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
-import type { Product } from '@/lib/types';
 import { useStore } from './store-provider';
 import { ProductCard } from './product-card';
-export function Wishlist({ products }: { products: Product[] }) {
+export function Wishlist() {
   const store = useStore(),
-    saved = products.filter((p) => store.wishlist.includes(p.id));
+    saved = store.data.products.filter((p) => !p.archived && store.wishlist.includes(p.id));
+  if (!store.ready)
+    return (
+      <div className="empty-state" role="status">
+        Loading your saved pieces…
+      </div>
+    );
   return (
     <div className="content-wrap">
       {saved.length ? (
         <>
           <p className="small muted">
             {saved.length} saved {saved.length === 1 ? 'piece' : 'pieces'} · Kept here for your next
-            visit, for up to seven days.
+            visit in this browser.
           </p>
           <div className="product-grid">
             {saved.map((p) => (

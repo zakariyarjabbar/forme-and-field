@@ -7,9 +7,12 @@ import type { Room, Product } from '@/lib/types';
 import { money } from '@/lib/money';
 import { useStore } from './store-provider';
 import { Dialog } from './dialog';
-export function RoomScene({ room, products }: { room: Room; products: Product[] }) {
-  const store = useStore(),
-    [open, setOpen] = useState(false),
+export function RoomScene({ room, products: initial }: { room: Room; products: Product[] }) {
+  const store = useStore();
+  const products = store.data.products.filter(
+    (p) => !p.archived && initial.some((x) => x.id === p.id),
+  );
+  const [open, setOpen] = useState(false),
     [focused, setFocused] = useState<string | null>(null),
     [busy, setBusy] = useState(false),
     [error, setError] = useState(''),
@@ -21,7 +24,7 @@ export function RoomScene({ room, products }: { room: Room; products: Product[] 
     chosen = products.filter((p) => included.includes(p.slug)),
     lines = chosen.map((p) => ({
       p,
-      v: p.variants.find((v) => v.id === selection[p.slug])!,
+      v: p.variants.find((v) => v.id === selection[p.slug]) ?? p.variants[0],
       quantity: room.products.find((x) => x.slug === p.slug)?.quantity ?? 1,
     })),
     total = lines.reduce((n, l) => n + l.v.price * l.quantity, 0),
@@ -118,7 +121,7 @@ export function RoomScene({ room, products }: { room: Room; products: Product[] 
                 listed finishes; alternate finishes use swatches on each product page.
               </p>
               {products.map((p) => {
-                const v = p.variants.find((v) => v.id === selection[p.slug])!,
+                const v = p.variants.find((v) => v.id === selection[p.slug]) ?? p.variants[0],
                   quantity = room.products.find((x) => x.slug === p.slug)?.quantity ?? 1;
                 return (
                   <div className="shop-room-item" key={p.id}>

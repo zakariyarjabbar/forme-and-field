@@ -1,3 +1,31 @@
+# Current QA — browser-local demo
+
+Verified 2026-09-08 on macOS, Node 26.0.0, Next.js 16.3.4 and Chrome 152.0.7977.77 against the local production build. The latest user instruction replaced SQLite and server-owned sessions with localStorage. Historical database-era results below do not describe current storage or security guarantees.
+
+| Check | Current result |
+| --- | --- |
+| `npm run typecheck` | Passed |
+| `npm run lint` | Passed |
+| `npm test` | 11 passed |
+| `npm run build` | Passed; no database or runtime data-directory writes |
+| `npm run test:e2e` | 11 passed in 23.9 seconds |
+| `npx tsx scripts/visual-qa.ts` | 35 route/viewport combinations; zero overflow, broken images or page errors |
+| `npx tsx scripts/accessibility-qa.ts` | 18 scans; zero configured WCAG-tag violations |
+| `npx tsx scripts/verify-social.ts` | 16 bot/route checks passed; initial-head OG metadata and anonymous 1200×630 JPEG delivery |
+| `npm ls better-sqlite3 drizzle-orm` | No installed database packages |
+
+Evidence: [unit tests](qa/local-tests.txt), [browser tests](qa/local-e2e.txt), [production build](qa/local-build.txt), [typecheck](qa/local-typecheck.txt), [lint](qa/local-lint.txt), [visual results](qa/visual-results.json), [accessibility results](qa/accessibility-results.json), [social checks](qa/social-preview-results.json). Desktop/mobile screenshots in `docs/qa/` were refreshed and inspected, including homepage, account and merchant views. No design redesign was needed.
+
+The unit suite covers independent seed snapshots, schema/JSON validation, cart quantity/stock rules, atomic room rollback, success/decline/retry behavior, immutable order lines, totals validation, archive rejection, exactly-once cancellation/restock, transition limits, unknown local records, inquiry deduplication, scoped reset and saved addresses. Browser tests exercise all existing shopping/merchant/contact flows, two independent browser contexts, simultaneous same-origin tabs, tab synchronization, fresh-page persistence, corruption/reset, quota failure without false success, and absence of commerce API/POST requests.
+
+During migration, stale generated Next route types referenced the removed APIs; they were regenerated. Two initial browser assertions matched both thumbnail and text links and were narrowed. A polling assertion read before the asynchronous tab write completed; it now waits for the persisted quantity. Final suites pass with the ordinary checks enabled. The filesystem cleanup command was automatically rejected; stale generated type directories were safely moved aside and regenerated.
+
+Current limitations: data is local and editable, not authenticated or authoritative. It is not shared across devices/origins and can be removed by site-data clearing or eviction. Web Locks require a supported browser on HTTPS/localhost; mutation failure is explicit when unavailable. Server-only order/product missing states now use a client-resolved missing view inside a 200 page shell. Chrome was verified; other browser engines and screen-reader speech were not. Automated axe results are not a WCAG certification. Lighthouse was not rerun for this storage migration; older measurements below remain historical. Vercel deployment must be verified separately from these local results.
+
+---
+
+# Historical QA — earlier SQLite implementation
+
 # QA and verification
 
 Verified on **2026-09-08**, using macOS, Node 26.0.0, npm 11.12.1, Next.js 16.3.4 and headless Chrome 152.0.7977.77. Browser checks ran against the local **production build** at `http://localhost:3000`. Screenshots show actual records created in a separate QA workspace, not invented business results.

@@ -1,0 +1,1 @@
+16 bot/route checks passed; JPEGs load anonymously, 1200×630, under 1 MB.

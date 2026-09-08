@@ -88,8 +88,8 @@ export function Checkout({ profile }: { profile?: Address }) {
       <div>
         <div className="demo-notice">
           <strong>A demonstration, from start to finish.</strong>No real payment, card details, or
-          shipment. Use fictional contact information. Your order will be saved in your private demo
-          workspace.
+          shipment. Use fictional contact information. Your order will be saved only in this
+          browser.
         </div>
         <form
           onSubmit={submit}

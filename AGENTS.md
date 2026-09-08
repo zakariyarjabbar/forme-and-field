@@ -7,13 +7,13 @@
 - Use current reliable sources for changing facts. Never claim absolute certainty without proof.
 
 # FORME & FIELD
-Read PRODUCT.md, DESIGN.md, docs/STATUS.md, then relevant docs/ARCHITECTURE.md sections. These documents implement the user-approved project brief in docs/BRIEF.md. User instructions take priority. Keep documentation truthful to running behavior.
+Read PRODUCT.md, DESIGN.md, docs/STATUS.md, then relevant docs/ARCHITECTURE.md sections. These documents implement the user-approved project brief in docs/BRIEF.md, with the later browser-only storage instruction taking priority. User instructions take priority. Keep documentation truthful to running behavior.
 
 Design and final photography are priorities. Preserve the architectural editorial identity; use Newsreader/Manrope and semantic tokens. Inspect desktop and mobile in bounded passes. No fake ratings, urgency, commercial claims or certification.
 
-Next.js App Router, strict TypeScript, npm lockfile, server-only commerce, SQLite/Drizzle. Money is integer cents. All private reads and writes require workspace ownership; server pricing and inventory are authoritative. Never trust client roles, prices or payment status. Mutations must validate, transactions must preserve stock, retries must be idempotent. No real payments or messages. No publishing without authorization.
+Next.js App Router, strict TypeScript, npm lockfile, browser-local demo commerce. The user explicitly replaced SQLite/server sessions with localStorage. Do not reintroduce any database, server commerce API, credentials or seven-day expiry. Money is integer cents. Validate local actions and persisted snapshots; save atomically and use Web Locks to serialize tabs. Failed writes must never claim success. Retries must be idempotent. This is editable simulation data, not secure production commerce. No real payments or messages.
 
-Features live in lib/content, lib/db, lib/server, and small UI components. Keep browser bundles free of database/session credentials. Changes must preserve all required routes and workflows.
+Features live in lib/content, lib/local and small UI components. Public pages and social metadata render from seed content; personalized views hydrate from the browser. Preserve required routes and workflows. The GitHub repository must remain private. The user is deploying on Vercel; changes must run without filesystem writes. Do not add paid services.
 
 Verify with npm run typecheck, npm run lint, npm test, npm run build, npm run test:e2e. Record commands actually run and remaining failures in docs/QA.md. Update docs/STATUS.md at checkpoints. Completion requires relevant final assets, all 24 products, 3 rooms, 3 articles, persisted isolated demo commerce/admin/forms, browser verification and a production build. Never relabel required unfinished work optional.
 

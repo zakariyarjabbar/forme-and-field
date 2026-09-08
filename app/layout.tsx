@@ -5,8 +5,6 @@ import './globals.css';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { StoreProvider } from '@/components/store-provider';
-import { session } from '@/lib/server/session';
-import { state } from '@/lib/server/store';
 const newsreader = localFont({
   src: [
     {
@@ -34,7 +32,12 @@ const manrope = localFont({
 export const runtime = 'nodejs';
 export const metadata: Metadata = {
   ...socialMetadata('FORME & FIELD', brandDescription),
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ||
+      (process.env.VERCEL_PROJECT_PRODUCTION_URL
+        ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+        : 'http://localhost:3000'),
+  ),
   title: {
     default: 'FORME & FIELD — Furniture, lighting, and the spaces between.',
     template: '%s — FORME & FIELD',
@@ -42,12 +45,11 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
   icons: { icon: '/icon.svg' },
 };
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  const ws = await session();
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${newsreader.variable} ${manrope.variable}`}>
       <body>
-        <StoreProvider initial={state(ws?.id)}>
+        <StoreProvider>
           <a href="#main" className="skip-link">
             Skip to content
           </a>

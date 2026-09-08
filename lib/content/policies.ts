@@ -59,15 +59,15 @@ export const policies: Record<
   privacy: {
     title: 'Privacy in this demonstration',
     intro:
-      'FORME & FIELD is a locally hosted concept store. This page describes what the implemented demo stores, rather than presenting a production privacy policy.',
+      'FORME & FIELD is a browser-local concept store. This page describes what the implemented demo stores, rather than presenting a production privacy policy.',
     sections: [
       {
         heading: 'Your isolated workspace',
-        body: 'Adding a piece, saving a favourite, entering the demo or submitting an inquiry creates an unguessable session cookie. The server stores a hash of that session token and a workspace identifier. The cookie is HttpOnly and SameSite=Lax. Your workspace expires after seven days.',
+        body: 'Shopping and merchant actions save one localStorage record in this browser on this website. There is no account login, session cookie or server database. Tabs on the same origin share the data. A different browser, device or website domain starts with a separate demo.',
       },
       {
         heading: 'What is stored',
-        body: 'Your bag, wishlist, entered contact and address fields, demo orders, payment simulation outcomes, inquiries, message previews and merchant changes are stored in SQLite. Use fictional contact details and do not enter card information or other sensitive information.',
+        body: 'Your bag, wishlist, entered contact and address fields, demo orders, payment simulation outcomes, inquiries, message previews and merchant changes are stored in browser localStorage. They are not sent to a merchant or saved on a server. Use fictional contact details and do not enter card information or other sensitive information.',
       },
       {
         heading: 'Local message previews',
@@ -75,7 +75,7 @@ export const policies: Record<
       },
       {
         heading: 'Reset and expiration',
-        body: 'You can reset your own workspace from the demo page after confirmation. That clears its orders, contact submissions and merchant changes, and restores the starting catalog. Expired sessions are rejected immediately; expired workspaces are removed when a new one is created or the cleanup command is run.',
+        body: 'You can reset your own workspace from the demo page after confirmation. That clears its orders, contact submissions and merchant changes, and restores the starting catalog. There is no automatic seven-day expiry. Clearing site data, private-browsing cleanup or browser storage eviction can remove the demo. No cloud backup is kept.',
       },
       {
         heading: 'Before a real launch',
@@ -98,7 +98,7 @@ export const policies: Record<
       },
       {
         heading: 'The demo workspace',
-        body: 'Customer and merchant views share your isolated workspace. Merchant access allows you to change only that workspace. Sessions expire after seven days, and demo records should not be relied upon as permanent storage.',
+        body: 'Customer and merchant views share the data in this browser. There is no real authentication or authoritative inventory. Anyone using this browser profile can view or edit its demo data. It is not shared with other devices and should not be relied upon as permanent storage.',
       },
       {
         heading: 'Imagery and specifications',

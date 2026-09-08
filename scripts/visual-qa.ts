@@ -1,3 +1,4 @@
+import { applyAction, initialData, STORAGE_KEY } from '../lib/local/store';
 import { chromium } from '@playwright/test';
 import { writeFileSync, mkdirSync } from 'node:fs';
 const base = process.env.TEST_BASE_URL || 'http://localhost:3000';
@@ -7,13 +8,11 @@ async function main() {
     page = await context.newPage();
   const errors: string[] = [];
   page.on('pageerror', (e) => errors.push(e.message));
-  async function post(data: Record<string, unknown>) {
-    const result = await context.request.post(`${base}/api/demo`, {
-      headers: { Origin: base },
-      data,
-    });
-    if (!result.ok()) throw new Error(await result.text());
-    return result.json();
+  let local = initialData();
+  async function post(input: Record<string, unknown>) {
+    const outcome = applyAction(local, input);
+    local = outcome.data;
+    return { result: outcome.result };
   }
   await post({ action: 'enter' });
   await post({ action: 'cart', variantId: 'v-1-1', quantity: 1, mode: 'add' });
@@ -36,6 +35,7 @@ async function main() {
       },
     },
   });
+  if (!order.result.order) throw new Error('QA order was not created');
   await post({ action: 'cart', variantId: 'v-4-1', quantity: 1, mode: 'add' });
   await post({ action: 'cart', variantId: 'v-6-1', quantity: 1, mode: 'add' });
   await post({
@@ -47,6 +47,12 @@ async function main() {
       message: 'Could the Cove chair and Plinth side table work in a small reading corner?',
     },
   });
+  await context.addInitScript(
+    ({ key, data }) => {
+      if (!localStorage.getItem(key)) localStorage.setItem(key, data);
+    },
+    { key: STORAGE_KEY, data: JSON.stringify(local) },
+  );
   mkdirSync('docs/qa', { recursive: true });
   const evidence: unknown[] = [];
   for (const [width, height, label] of [

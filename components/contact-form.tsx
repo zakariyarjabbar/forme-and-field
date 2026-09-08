@@ -24,8 +24,8 @@ export function ContactForm() {
       const result = await store.mutate({ action: 'inquiry', data: parsed.data });
       setSuccess(
         result.duplicate
-          ? 'This inquiry is already saved in your demo workspace.'
-          : 'Your inquiry has been saved in your demo workspace. A local acknowledgment is ready in the merchant outbox.',
+          ? 'This inquiry is already saved in this browser.'
+          : 'Your inquiry has been saved only in this browser. A local acknowledgment is ready in the merchant outbox.',
       );
     } catch (e) {
       setError((e as Error).message);

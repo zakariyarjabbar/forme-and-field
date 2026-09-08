@@ -24,7 +24,7 @@ export function OrderView({
       <p className="muted">
         {confirmation
           ? 'Your demo order is placed. Nothing was charged, and no products will be shipped.'
-          : 'Your order record, saved in this isolated demo workspace.'}
+          : 'Your order record, saved only in this browser.'}
       </p>
       <div className="order-meta">
         <span>{o.reference}</span>

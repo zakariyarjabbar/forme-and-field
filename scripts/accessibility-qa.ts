@@ -1,3 +1,4 @@
+import { applyAction, initialData, STORAGE_KEY } from '../lib/local/store';
 import { chromium } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import { writeFileSync } from 'node:fs';
@@ -6,14 +7,14 @@ async function main() {
   const browser = await chromium.launch({ channel: 'chrome', headless: true }),
     context = await browser.newContext(),
     page = await context.newPage();
-  await context.request.post(`${base}/api/demo`, {
-    headers: { Origin: base },
-    data: { action: 'enter' },
-  });
-  await context.request.post(`${base}/api/demo`, {
-    headers: { Origin: base },
-    data: { action: 'cart', variantId: 'v-1-1', quantity: 1, mode: 'add' },
-  });
+  let local = applyAction(initialData(), { action: 'enter' }).data;
+  local = applyAction(local, { action: 'cart', variantId: 'v-1-1', quantity: 1, mode: 'add' }).data;
+  await context.addInitScript(
+    ({ key, data }) => {
+      if (!localStorage.getItem(key)) localStorage.setItem(key, data);
+    },
+    { key: STORAGE_KEY, data: JSON.stringify(local) },
+  );
   const evidence: unknown[] = [];
   for (const width of [1440, 390]) {
     await page.setViewportSize({ width, height: 900 });
