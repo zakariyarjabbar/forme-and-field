@@ -54,6 +54,7 @@ export function ProductDetail({ product: p }: { product: Product }) {
           {p.images.map((src, i) => (
             <button
               className="gallery-image"
+              disabled={!store.ready}
               key={src}
               onClick={() => setZoom(i)}
               aria-label={`Zoom ${i === 0 ? 'primary' : i === 1 ? 'alternate' : 'material detail'} view of ${p.name}`}
@@ -83,7 +84,7 @@ export function ProductDetail({ product: p }: { product: Product }) {
             <span className="small">USD</span>
           </div>
           <p className="product-intro">{p.description}</p>
-          <fieldset>
+          <fieldset disabled={!store.ready}>
             <legend>Finish — {v.name}</legend>
             <div className="finish-select">
               {p.variants.map((x) => (
@@ -125,7 +126,7 @@ export function ProductDetail({ product: p }: { product: Product }) {
           <div className="purchase-actions" ref={purchaseRef}>
             <div className="quantity-control">
               <button
-                disabled={quantity <= 1 || busy}
+                disabled={quantity <= 1 || busy || !store.ready}
                 onClick={() => setQuantity((n) => n - 1)}
                 aria-label="Decrease quantity"
               >
@@ -133,7 +134,7 @@ export function ProductDetail({ product: p }: { product: Product }) {
               </button>
               <output aria-label="Quantity">{quantity}</output>
               <button
-                disabled={quantity >= Math.min(v.stock, 20) || busy}
+                disabled={quantity >= Math.min(v.stock, 20) || busy || !store.ready}
                 onClick={() => setQuantity((n) => n + 1)}
                 aria-label="Increase quantity"
               >

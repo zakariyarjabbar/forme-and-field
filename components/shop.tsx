@@ -171,7 +171,7 @@ export function Shop({
             </label>
           </div>
         </fieldset>
-        <button className="button secondary full" type="submit">
+        <button className="button secondary full" type="submit" disabled={!store.ready || isPending}>
           Apply filters <ArrowRight size={17} />
         </button>
         <Link href={pathname} onClick={() => setFilterOpen(false)} className="text-link center">
