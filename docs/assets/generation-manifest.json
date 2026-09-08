@@ -1,0 +1,583 @@
+{
+  "brand": "FORME & FIELD",
+  "method": "Built-in image_gen; original AI-generated furniture visualizations, not real manufacturer photography.",
+  "generatedOn": "2026-09-08",
+  "assets": [
+    {
+      "file": "/tmp/forme-field-assets/featured-primary-atlas.png",
+      "width": 1536,
+      "height": 1024,
+      "rows": 2,
+      "columns": 3,
+      "cellWidth": 512,
+      "cellHeight": 512,
+      "rowMajorProducts": [
+        "Cove lounge chair",
+        "Vale sofa",
+        "Arc dining table",
+        "Plinth side table",
+        "Halo pendant",
+        "Reed floor lamp"
+      ],
+      "source": "/Users/zakariyajabbar/.codex/generated_images/01a080ac-6151-7b30-9f33-a04c5dddc812/exec-c9ce206f-c7da-438f-9197-377f7ad98c50.png",
+      "prompt": "Use case: product-mockup\nAsset type: premium furniture ecommerce product photography atlas, six clean separate square panels.\nPrimary request: Create ONE extremely high resolution 3-column by 2-row contact sheet, overall 3:2 landscape aspect, ideally 3072x2048, with six individual product images in exact row-major order specified below. Each cell occupies exactly one third of width and one half of height, no gutters and no borders, each has its own warm chalk plaster floor and seamless wall, identical soft natural directional daylight, with the entire isolated product fully inside its panel, generous breathing room. This is a master identity reference for a coherent fictional premium furniture store collection named FORME & FIELD; render no brand or text.\nTOP LEFT: Cove lounge chair, front three-quarter view: oat linen upholstered separate thick seat and back cushions, distinctive solid natural oak rounded open arms forming long rounded horizontal rails, exposed four solid oak wood legs, warm pale oak frame.\nTOP MIDDLE: Vale sofa, front three-quarter view: low 3-seat oatmeal textured fabric sofa, three broad rectangular seat cushions and three broad rectangular back cushions, simple low straight upholstered arms, short natural oak feet.\nTOP RIGHT: Arc dining table, front three-quarter view: large solid natural oak rounded oval top, exactly two broad cylindrical oak pedestal legs below it, no chairs.\nBOTTOM LEFT: Plinth side table, three-quarter view: one simple solid pale travertine cylinder, flat circular top, mineral pores and subtle horizontal stone grain.\nBOTTOM MIDDLE: Halo pendant, front view: one single luminous opal glass globe suspended from one very thin straight vertical brushed brass stem; stem entering image from above. Show complete globe with ample surrounding air, no ceiling canopy necessary.\nBOTTOM RIGHT: Reed floor lamp, three-quarter view: slender dark brushed bronze vertical stem, small conical adjustable shade at top angled down, circular weighted base fully visible. Minimal and elegant, one lamp.\nStyle/medium: tactile editorial studio product photographs, physically realistic materials, premium architectural magazine art direction. Matte chalk backdrop and grounding shadows. Neutral white balance, warm but not orange. Objects large enough to see materials, consistently centered.\nConstraints: exactly six separate non-overlapping square cells, exactly one named product per cell, exact order, full silhouettes inside their cells, no labels, no panel outlines, no extra objects, no words, no numbers, no watermark. Must read as photographed furniture rather than concept drawing.",
+      "references": [],
+      "qa": "Six correct identities in exact order, complete silhouette, clear square cells; output resolution lower than requested 3072x2048.",
+      "panels": [
+        {
+          "name": "Cove lounge chair",
+          "id": "cove-lounge-chair",
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "Vale sofa",
+          "id": "vale-sofa",
+          "x": 512,
+          "y": 0,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "Arc dining table",
+          "id": "arc-dining-table",
+          "x": 1024,
+          "y": 0,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "Plinth side table",
+          "id": "plinth-side-table",
+          "x": 0,
+          "y": 512,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "Halo pendant",
+          "id": "halo-pendant",
+          "x": 512,
+          "y": 512,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "Reed floor lamp",
+          "id": "reed-floor-lamp",
+          "x": 1024,
+          "y": 512,
+          "width": 512,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "file": "/tmp/forme-field-assets/quiet-living.png",
+      "width": 1536,
+      "height": 1024,
+      "products": [
+        "Vale sofa",
+        "Cove lounge chair",
+        "Plinth side table",
+        "Reed floor lamp"
+      ],
+      "source": "/Users/zakariyajabbar/.codex/generated_images/01a080ac-6151-7b30-9f33-a04c5dddc812/exec-9219fce5-467e-4929-8bc8-7302eab09137.png",
+      "prompt": "Use case: photorealistic-natural\nAsset type: premium furniture storefront wide editorial hero, one photograph.\nPrimary request: Create a sophisticated lived-in architectural living room, landscape 3:2. Reference image is a 3x2 master product identity sheet. Incorporate its TOP MIDDLE Vale sofa, TOP LEFT Cove lounge chair, BOTTOM LEFT Plinth travertine side table, and BOTTOM RIGHT Reed bronze floor lamp with faithful shapes, proportions, materials, and construction. Use those exact product designs as though photographed on location.\nScene/backdrop: expansive warm chalk lime-plaster living room, tall daylight windows outside the left edge, pale oak floor, full-height dark walnut doorway or panel on the right, low understated textured natural wool area rug, directional morning sunlight with soft shadows. Room feels quiet, lived-in, architectural. A single art print with no readable text and one restrained olive cushion permitted; no clutter.\nComposition/framing: eye-level wide room filling frame, sofa on left facing forward, lounge chair on right turned slightly inward and fully shown, cylindrical travertine side table near lounge chair, floor lamp just beside sofa with entire conical shade, stem and round base visible. Allow comfortable negative wall space in upper center and generous floor in foreground. All four products should be clearly separable for shoppable hotspots and recognizable from reference. No cropped furniture.\nReference invariants: sofa has exactly three broad rectangular seat cushions and three back cushions, low straight upholstered arms and short oak feet. Cove chair has oatmeal linen seat/back and solid pale oak long rounded open arm rails merging into four exposed oak legs; keep its characteristic rounded frame. Plinth is a simple solid pale travertine cylinder with pores. Reed has slender dark brushed bronze stem, small conical adjustable shade angled down, circular base.\nStyle/medium: highly realistic premium architectural editorial interior photography, 35mm lens, balanced verticals, natural neutral daylight, tactile wood grain and linen weave. Warm ivory, beige, natural oak, muted olive and restrained walnut. Warm but not orange.\nConstraints: single cohesive real room photograph, no contact-sheet divisions, no text, no logo, no watermarks, no people, no duplicate key products, no plants obscuring furniture.",
+      "editPrompt": "Use case: precise-object-edit\nEdit target: the supplied living room photograph.\nRemove only the low oak coffee table and its books and bowl in the foreground center-left. Replace that area with a perfectly continuous matching natural wool rug, maintaining the room's original light and shadows. Keep all four existing main products unchanged: oatmeal three-seat sofa on left, rounded oak lounge chair on right, pale travertine cylinder at far right, and bronze conical floor lamp between them. Keep all architecture, materials, camera framing, art, window, natural light, existing rug boundaries, the olive sofa cushion, and the small bowl on the travertine side table unchanged. The result should be a premium quiet living room with generous empty rug in the foreground. Do not add any replacement coffee table or extra objects. Preserve the full image aspect ratio. No text or logos.",
+      "references": [
+        "/tmp/forme-field-assets/featured-primary-atlas.png",
+        "/tmp/forme-field-assets/quiet-living-v1.png"
+      ],
+      "qa": "Four requested product identities identifiable and silhouettes complete. Original generated extra low coffee table; final targeted edit removed it. Small ceramic bowl and art are decorative props, not catalog identities.",
+      "suggestedHotspotsPercent": [
+        {
+          "product": "Vale sofa",
+          "x": 36,
+          "y": 54
+        },
+        {
+          "product": "Cove lounge chair",
+          "x": 79,
+          "y": 58
+        },
+        {
+          "product": "Plinth side table",
+          "x": 93,
+          "y": 68
+        },
+        {
+          "product": "Reed floor lamp",
+          "x": 64,
+          "y": 44
+        }
+      ]
+    },
+    {
+      "file": "/tmp/forme-field-assets/secondary-02-primary-atlas.png",
+      "width": 1536,
+      "height": 1024,
+      "rows": 2,
+      "columns": 3,
+      "cellWidth": 512,
+      "cellHeight": 512,
+      "rowMajorProducts": [
+        "Line dining chair",
+        "Fold accent chair",
+        "Morrow bench",
+        "Low stool",
+        "Span coffee table",
+        "Orbit side table"
+      ],
+      "source": "/Users/zakariyajabbar/.codex/generated_images/01a080ac-6151-7b30-9f33-a04c5dddc812/exec-e51917cf-611c-47ea-a68a-81ad7927f73c.png",
+      "prompt": "Use case: product-mockup\nAsset type: premium furniture ecommerce photography atlas, 3 columns by 2 rows, 3:2 landscape.\nPrimary request: ONE contact sheet of exactly six distinct isolated furniture products in six equal square panels with no gutters or borders. Each panel has its own seamless warm chalk plaster wall and floor, soft natural directional daylight and grounding shadow. Reference image is for matching photography, light and materials only; do not copy its six products.\nExact row-major panel order:\nTOP LEFT — Line dining chair: solid natural oak simple straight four-leg frame, plain straight horizontal oak backrest, square oatmeal linen upholstered seat, no arms. Entire chair shown in front three-quarter view.\nTOP MIDDLE — Fold accent chair: distinct warm walnut open angular frame with low relaxed seat, natural linen sling seat and back, exposed refined walnut joinery. Entire chair shown in front three-quarter view.\nTOP RIGHT — Morrow bench: long low solid natural oak bench with a top made of parallel longitudinal wooden slats, four sturdy square oak legs; full bench in three-quarter view, no back or cushions.\nBOTTOM LEFT — Low stool: short solid walnut stool, thick softly rounded triangular seat, exactly three splayed cylindrical walnut legs; full object in three-quarter view.\nBOTTOM MIDDLE — Span coffee table: low rectangular solid walnut slab top with large rounded corners, two broad walnut end-panel legs beneath, rich dark walnut grain; full object in three-quarter view.\nBOTTOM RIGHT — Orbit side table: small round natural oak tabletop, one slim central oak stem, clear four-prong oak cross foot at floor; entire product, three-quarter view.\nStyle/medium: original photorealistic premium studio product photographs, natural wood grain and tactile linen, editorial furniture catalog, neutral white balance, warm but not orange. Match reference quality, background, and lighting.\nComposition/framing: six equal square cells each exactly one third image width and half image height, generous breathing room, entire product and feet fully within its own panel. Clean separate individual photos, no objects crossing cell boundaries. Request highest possible native resolution, ideally 3072 by 2048, to allow clear product crops.\nConstraints: exact six named identities and order, one product per cell, no labels, no words, no numerals, no logos, no watermark, no decorative props.",
+      "references": [
+        {
+          "file": "/tmp/forme-field-assets/featured-primary-atlas.png",
+          "role": "Photography style only"
+        }
+      ],
+      "qa": "Six distinct correct products in exact order, full silhouettes, no border/text.",
+      "panels": [
+        {
+          "name": "Line dining chair",
+          "id": "line-dining-chair",
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "Fold accent chair",
+          "id": "fold-accent-chair",
+          "x": 512,
+          "y": 0,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "Morrow bench",
+          "id": "morrow-bench",
+          "x": 1024,
+          "y": 0,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "Low stool",
+          "id": "low-stool",
+          "x": 0,
+          "y": 512,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "Span coffee table",
+          "id": "span-coffee-table",
+          "x": 512,
+          "y": 512,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "Orbit side table",
+          "id": "orbit-side-table",
+          "x": 1024,
+          "y": 512,
+          "width": 512,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "file": "/tmp/forme-field-assets/secondary-03-primary-atlas.png",
+      "width": 1536,
+      "height": 1024,
+      "rows": 2,
+      "columns": 3,
+      "cellWidth": 512,
+      "cellHeight": 512,
+      "rowMajorProducts": [
+        "Beam console",
+        "Gather dining table",
+        "Dune table lamp",
+        "Column table lamp",
+        "Loop wall light",
+        "Tilt task lamp"
+      ],
+      "source": "/Users/zakariyajabbar/.codex/generated_images/01a080ac-6151-7b30-9f33-a04c5dddc812/exec-7d33c9c4-4b01-459c-a365-36e99138f578.png",
+      "prompt": "Use case: product-mockup\nAsset type: premium furniture ecommerce photography atlas, 3 columns by 2 rows, 3:2 landscape.\nPrimary request: ONE contact sheet of exactly six distinct furniture and lighting products in six equal square panels with no gutters or borders. Each panel has its own seamless warm chalk plaster backdrop and floor/surface, soft natural directional daylight and grounding shadow. Reference image is for matching photography and materials only; do not copy its products.\nExact row-major panel order:\nTOP LEFT — Beam console: slim long walnut console table, narrow rectangular top, open space beneath and four refined straight square walnut legs, no drawers. Entire console in front three-quarter view.\nTOP MIDDLE — Gather dining table: round natural oak dining-height thick tabletop on exactly three chunky cylindrical oak legs arranged in triangle, full product in three-quarter view, no chairs.\nTOP RIGHT — Dune table lamp: sculptural off-white ceramic mushroom table lamp with a broad rounded dome shade and stout tapered ceramic central body/base, matte ceramic texture, softly lit underneath shade. Whole lamp fully visible.\nBOTTOM LEFT — Column table lamp: pale travertine cylindrical base with stone pores and a large simple natural linen drum lampshade, slender small brass neck, whole lamp fully visible.\nBOTTOM MIDDLE — Loop wall light: brushed bronze thin circular metal loop arranged vertically and a single small opal glass globe integrated near bottom inside the loop, mounted on the chalk plaster wall with minimal attachment. Whole lamp visible.\nBOTTOM RIGHT — Tilt task lamp: refined black and brushed brass adjustable desk lamp, small shallow conical black metal shade tilted down, two articulated slender arms with brass joints, flat round black weighted base. Whole lamp visible.\nStyle/medium: original photorealistic premium studio product photographs, natural tactile walnut/oak, stone, linen, ceramic and metal, editorial furniture catalog, neutral white balance, warm but not orange. Match reference quality and calm background.\nComposition/framing: six equal square cells exactly one third image width by half image height, consistently centered with generous breathing room; every whole product fully inside its own cell, no panel crossing. Request highest available native resolution, ideally 3072 by 2048.\nConstraints: exactly six named identities, exact order, one product per cell, no labels, no words, no numerals, no logos, no watermark, no extra props.",
+      "editPrompt": "Use case: precise-object-edit\nEdit target: supplied 3-column by 2-row furniture product contact sheet.\nChange ONLY the wall light in the BOTTOM MIDDLE square panel. Its current metal loop is too tall and oval. Make the brushed bronze loop a true perfect circle as seen straight-on, equal height and width, centered in that panel, with the same thin bronze material, small round wall mount at top, and one small opal glass globe near the lower inner edge of the circle. A simple circular ring with diameter about 60 percent of the square cell's width. Preserve every pixel-level visual feature of the other five product panels as far as possible: walnut console, oak round table, ceramic mushroom lamp, travertine column lamp, articulated task lamp. Keep exact 3x2 layout, equal square cell boundaries, lighting, background, aspect ratio, and no text. Do not resize or change the other products.",
+      "references": [
+        {
+          "file": "/tmp/forme-field-assets/featured-primary-atlas.png",
+          "role": "Photography style only"
+        },
+        {
+          "file": "/tmp/forme-field-assets/secondary-03-primary-atlas-v1.png",
+          "role": "Edit target"
+        }
+      ],
+      "qa": "Six distinct correct products in exact order, full silhouettes. Corrected elongated loop to circular geometry in final version.",
+      "panels": [
+        {
+          "name": "Beam console",
+          "id": "beam-console",
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "Gather dining table",
+          "id": "gather-dining-table",
+          "x": 512,
+          "y": 0,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "Dune table lamp",
+          "id": "dune-table-lamp",
+          "x": 1024,
+          "y": 0,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "Column table lamp",
+          "id": "column-table-lamp",
+          "x": 0,
+          "y": 512,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "Loop wall light",
+          "id": "loop-wall-light",
+          "x": 512,
+          "y": 512,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "Tilt task lamp",
+          "id": "tilt-task-lamp",
+          "x": 1024,
+          "y": 512,
+          "width": 512,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "file": "/tmp/forme-field-assets/secondary-04-primary-atlas.png",
+      "width": 1536,
+      "height": 1024,
+      "rows": 2,
+      "columns": 3,
+      "cellWidth": 512,
+      "cellHeight": 512,
+      "rowMajorProducts": [
+        "Grid sideboard",
+        "Frame shelf",
+        "Nook cabinet",
+        "Vessel vase",
+        "Ridge bowl",
+        "Thread wool throw"
+      ],
+      "source": "/Users/zakariyajabbar/.codex/generated_images/01a080ac-6151-7b30-9f33-a04c5dddc812/exec-4f04c9e7-93f1-4cbb-a44f-5263d61bc18c.png",
+      "prompt": "Use case: product-mockup\nAsset type: premium furniture ecommerce photography atlas, 3 columns by 2 rows, 3:2 landscape.\nPrimary request: ONE contact sheet of exactly six distinct furniture and decorative products in six equal square panels with no gutters or borders. Each panel has its own seamless warm chalk plaster backdrop and floor/surface, soft natural directional daylight and grounding shadow. Reference image is for matching photography and materials only; do not copy its products.\nExact row-major panel order:\nTOP LEFT — Grid sideboard: long low solid natural oak sideboard with exactly four equal flush rectangular doors divided by narrow straight vertical shadow lines, small understated oak plinth base, no visible hardware. Full piece in front three-quarter view.\nTOP MIDDLE — Frame shelf: open tall walnut shelving unit, four horizontal open display shelves inside a minimal rectangular solid walnut frame with four slim uprights, no back panel and no contents. Entire full-height shelf inside image with all edges visible.\nTOP RIGHT — Nook cabinet: compact natural oak cabinet, two equal flush hinged doors with small rounded wood knobs, low four oak feet, simple square box silhouette. Full cabinet in front three-quarter view.\nBOTTOM LEFT — Vessel vase: a single sculptural organic matte bone-white ceramic vase, softly asymmetrical rounded body, narrow irregular open neck, tactile clay finish. Entire empty vase with no flowers, centered.\nBOTTOM MIDDLE — Ridge bowl: one wide low dark walnut wooden bowl with thick subtly rounded lip, shallow concave interior, visible dense wood grain, no contents. Entire bowl shown from elevated three-quarter angle.\nBOTTOM RIGHT — Thread wool throw: one loosely folded thick oatmeal natural wool blanket, subtle weave, fringed edges draping softly, placed on bare chalk plaster surface, no chair beneath. The full folded blanket and fringes visible.\nStyle/medium: original photorealistic premium studio product photographs, tactile natural wood, stone-colored ceramics, soft wool, editorial furniture catalog, neutral white balance, warm but not orange. Match reference quality and calm background.\nComposition/framing: six equal square cells exactly one third image width by half image height; consistently centered with generous breathing room; every whole product fully inside its own cell; no panel crossing. Request highest possible native resolution ideally 3072 by 2048.\nConstraints: exact six identities and order, one product per cell, no text, no labels, no numbers, no logos, no watermarks, no extra decor.",
+      "references": [
+        {
+          "file": "/tmp/forme-field-assets/featured-primary-atlas.png",
+          "role": "Photography style only"
+        }
+      ],
+      "qa": "Six distinct correct products in exact order. Shelf has four usable shelves plus upper frame board. Full silhouettes clear, no border/text.",
+      "panels": [
+        {
+          "name": "Grid sideboard",
+          "id": "grid-sideboard",
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "Frame shelf",
+          "id": "frame-shelf",
+          "x": 512,
+          "y": 0,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "Nook cabinet",
+          "id": "nook-cabinet",
+          "x": 1024,
+          "y": 0,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "Vessel vase",
+          "id": "vessel-vase",
+          "x": 0,
+          "y": 512,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "Ridge bowl",
+          "id": "ridge-bowl",
+          "x": 512,
+          "y": 512,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "Thread wool throw",
+          "id": "thread-wool-throw",
+          "x": 1024,
+          "y": 512,
+          "width": 512,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "file": "/tmp/forme-field-assets/featured-alternate-atlas.png",
+      "width": 1536,
+      "height": 1024,
+      "rows": 2,
+      "columns": 3,
+      "cellWidth": 512,
+      "cellHeight": 512,
+      "rowMajorProducts": [
+        "Cove lounge chair",
+        "Vale sofa",
+        "Arc dining table",
+        "Plinth side table",
+        "Halo pendant",
+        "Reed floor lamp"
+      ],
+      "source": "/Users/zakariyajabbar/.codex/generated_images/01a080ac-6151-7b30-9f33-a04c5dddc812/exec-62534fdb-4601-4762-9fc9-e03a455da4fd.png",
+      "prompt": "Use case: product-mockup\nAsset type: six alternate-angle gallery images for premium furniture ecommerce in a 3-column by 2-row contact sheet.\nInput image: the supplied 3x2 sheet is the exact product identity reference. Create alternate photographic views of the SAME six products, with the SAME materials, construction, proportions and design details. This is not a redesign.\nLayout: exact 3x2 equal square cells, same row-major identities as reference, each own warm chalk plaster studio floor/wall, no gutters, no borders, no text.\nTOP LEFT — Same Cove lounge chair shown from the opposite front three-quarter angle, more side-on to reveal the long rounded open oak arm rail and exposed oak side frame; thick oat linen seat and back cushions, four wooden legs, same oak tone, same joints. Full chair visible.\nTOP MIDDLE — Same Vale sofa viewed from its opposite front three-quarter angle with more visible side arm; exactly three broad rectangular seat cushions and three rectangular back cushions, low straight fabric arms, short oak feet. Entire sofa visible.\nTOP RIGHT — Same Arc dining table viewed from a higher opposite diagonal angle so rounded oval top shape and exactly two broad cylindrical pedestal legs remain clearly visible. Natural oak and same edge thickness. Full table visible.\nBOTTOM LEFT — Same Plinth side table viewed from a higher angle showing its full flat circular top and porous pale travertine cylindrical body. Same dimensions/proportions, whole object.\nBOTTOM MIDDLE — Same Halo pendant in an alternate slightly lower camera view, softly lit opal glass globe and its thin vertical brushed brass stem shown entering from above. Same exact globe size-to-stem proportions; no extra fixtures.\nBOTTOM RIGHT — Same Reed floor lamp viewed from the opposite side with its small downward-angled conical dark brushed bronze shade, slender stem, curved short top connection and round weighted base unchanged. Full lamp visible.\nStyle: highly realistic editorial studio furniture photography, consistent natural directional daylight and neutral warm chalk backgrounds, tactile surfaces. Warm but not orange. No props.\nConstraints: preserve all six exact product identities; same panel order; one complete product per panel; clearly distinct angles from original; do not introduce any extra products, decorative objects, new colors, new arm shapes, new leg counts or extra shades. Highest available native resolution, ideally 3072x2048.",
+      "references": [
+        {
+          "file": "/tmp/forme-field-assets/featured-primary-atlas.png",
+          "role": "Exact product identity reference"
+        }
+      ],
+      "qa": "All product silhouettes and principal construction stay recognizable. Opposite front angles for chair/sofa/table/lamp; higher stone view. Halo sphere angle difference is subtle; room context provides more visual variation.",
+      "panels": [
+        {
+          "name": "Cove lounge chair",
+          "id": "cove-lounge-chair",
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "Vale sofa",
+          "id": "vale-sofa",
+          "x": 512,
+          "y": 0,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "Arc dining table",
+          "id": "arc-dining-table",
+          "x": 1024,
+          "y": 0,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "Plinth side table",
+          "id": "plinth-side-table",
+          "x": 0,
+          "y": 512,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "Halo pendant",
+          "id": "halo-pendant",
+          "x": 512,
+          "y": 512,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "Reed floor lamp",
+          "id": "reed-floor-lamp",
+          "x": 1024,
+          "y": 512,
+          "width": 512,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "file": "/tmp/forme-field-assets/featured-detail-atlas.png",
+      "width": 1536,
+      "height": 1024,
+      "rows": 2,
+      "columns": 3,
+      "cellWidth": 512,
+      "cellHeight": 512,
+      "rowMajorProducts": [
+        "Cove lounge chair",
+        "Vale sofa",
+        "Arc dining table",
+        "Plinth side table",
+        "Halo pendant",
+        "Reed floor lamp"
+      ],
+      "source": "/Users/zakariyajabbar/.codex/generated_images/01a080ac-6151-7b30-9f33-a04c5dddc812/exec-0d1e3200-1f53-4a1c-bb7b-745af53439ac.png",
+      "prompt": "Use case: product-mockup\nAsset type: six photographic material-detail gallery images for premium furniture ecommerce in ONE 3-column by 2-row contact sheet.\nInput image: the supplied 3x2 sheet is the exact product identity reference. Photograph close details of those same six products, not new designs. Keep exact wood species/color, linen texture, stone, glass, brass and dark bronze from the reference.\nLayout: exactly 3x2 equal square cells with no gutters, no borders, no text. The macro crops intentionally fill each cell with one clearly understandable product detail. Same order as reference.\nTOP LEFT — Cove lounge chair detail: close photograph of one distinctive rounded solid natural oak arm rail curving smoothly into the front leg, beside the thick oatmeal linen seat cushion; show oak grain and fine upholstery weave together. The rounded rail design and cushion piping must match the reference.\nTOP MIDDLE — Vale sofa detail: close photograph across the corner seam where a broad oatmeal textured fabric seat cushion meets the straight upholstered arm. Show the fine linen-like weave, precise stitched seam and softly rounded cushion edge, same exact oatmeal color as reference. No chair wood.\nTOP RIGHT — Arc dining table detail: close photograph of the smooth thin rounded natural oak tabletop edge with broad oak grain across its upper surface and part of one cylindrical pedestal connection visible below in soft focus. Same warm pale oak and edge thickness as reference.\nBOTTOM LEFT — Plinth side table detail: close photograph of pale travertine cylinder's flat top meeting its vertical curved side, clear tiny mineral pores and subtle horizontal natural stone grain, matte finish, same sand/ivory stone as reference.\nBOTTOM MIDDLE — Halo pendant detail: close photograph of the junction between its thin brushed brass vertical suspension stem and smooth translucent opal glass globe, include upper quarter of softly luminous sphere and short length of stem, subtle glass highlight, exact simple design.\nBOTTOM RIGHT — Reed floor lamp detail: close photograph of its small dark brushed bronze conical adjustable shade and the short curved connector/pivot to its slender stem, show brushed bronze surface, fine joinery and warm light inside shade. Same shape/material as reference.\nStyle: highly realistic editorial furniture macro photography, material texture must feel tactile and physically real, soft natural side light, shallow yet sufficient depth of field, neutral warm chalk background visible only where needed. Warm but not orange.\nConstraints: preserve all identities and reference details; exact panel order; no additional objects or products, no swatch samples, no hands, no diagrams, no text, logos or watermarks. Highest available native resolution, ideally 3072x2048.",
+      "references": [
+        {
+          "file": "/tmp/forme-field-assets/featured-primary-atlas.png",
+          "role": "Exact product identity reference"
+        }
+      ],
+      "qa": "Six correctly ordered tactile closeups. Referenced principal materials and construction recognizable; fine weave/wood/stone microtexture is newly synthesized rather than literal pixel-matched crop.",
+      "panels": [
+        {
+          "name": "Cove lounge chair",
+          "id": "cove-lounge-chair",
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "Vale sofa",
+          "id": "vale-sofa",
+          "x": 512,
+          "y": 0,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "Arc dining table",
+          "id": "arc-dining-table",
+          "x": 1024,
+          "y": 0,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "Plinth side table",
+          "id": "plinth-side-table",
+          "x": 0,
+          "y": 512,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "Halo pendant",
+          "id": "halo-pendant",
+          "x": 512,
+          "y": 512,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "Reed floor lamp",
+          "id": "reed-floor-lamp",
+          "x": 1024,
+          "y": 512,
+          "width": 512,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "file": "/tmp/forme-field-assets/gathered-around.png",
+      "width": 1536,
+      "height": 1024,
+      "products": [
+        "Arc dining table",
+        "Line dining chair",
+        "Halo pendant"
+      ],
+      "source": "/Users/zakariyajabbar/.codex/generated_images/01a080ac-6151-7b30-9f33-a04c5dddc812/exec-7a743c80-46f8-42d7-96e0-cdf74552789f.png",
+      "prompt": "Use case: photorealistic-natural\nAsset type: premium furniture storefront shoppable dining room scene, one landscape 3:2 photograph.\nInput references: Image 1 is the featured product master sheet; use its TOP RIGHT Arc dining table and BOTTOM MIDDLE Halo pendant as exact product design references. Image 2 is a secondary product master sheet; use only its TOP LEFT Line dining chair as exact product design reference. These images define the pictured furniture; preserve their actual shapes, proportions, materials and details.\nPrimary request: create an inviting architectural dining room with the exact Arc table, four copies of the exact Line chair, and one Halo pendant hanging above. Large quiet warm chalk lime-plaster room, wide oak floorboards, deep walnut doorway on far right, soft directional daylight from tall left window. Small restrained oxblood abstract artwork with no text on rear wall, an understated oatmeal wool rug under table, one small empty bone ceramic bowl as decor on tabletop.\nComposition: eye-level 35mm wide camera, whole room filling frame with generous wall negative space above. The long oval oak table is centered in the lower half, running slightly diagonally; show its whole tabletop and BOTH large cylindrical pedestal legs unobstructed from front. Four chairs arranged on far side and at the two ends, leaving front side open so legs are visible. At least one Line chair should be fully visible including upholstered seat and four legs, and all chairs should clearly share same straight oak back and oatmeal linen seat. One large single opal globe suspended from a very thin brass stem above the center of table, whole globe visible.\nIdentity invariants: Arc is the reference's rounded oval solid natural oak top on exactly TWO broad smooth oak cylinders, not a coffee table, not three legs, not a trestle. Line chair has simple straight oak four-leg frame, one wide horizontal flat oak backrest, oatmeal upholstered square seat and no arms. Halo is exactly one opal glass sphere with thin straight brushed brass stem, no fabric shade, no cluster.\nStyle: highly realistic premium architectural editorial photography, calm lived-in minimalism, tactile oak grain and linen weave, balanced verticals, natural neutral daylight, warm ivory, light oak and walnut, warm but not orange.\nConstraints: no people, no text, no labels, no logo or watermark, no contact-sheet divisions, no duplicate lamps, no unrelated furniture. Keep whole objects sufficiently visible for precise shoppable hotspots.",
+      "references": [
+        {
+          "file": "/tmp/forme-field-assets/featured-primary-atlas.png",
+          "role": "Arc/Halo exact identity reference"
+        },
+        {
+          "file": "/tmp/forme-field-assets/secondary-02-primary-atlas.png",
+          "role": "Line exact identity reference"
+        }
+      ],
+      "qa": "Table's two cylindrical legs and whole oval top clearly shown; four matching Line chairs, two complete foreground silhouettes; one Halo globe. Neutral bowl and artwork are decorative props.",
+      "suggestedHotspotsPercent": [
+        {
+          "product": "Arc dining table",
+          "x": 50,
+          "y": 60
+        },
+        {
+          "product": "Line dining chair",
+          "x": 17,
+          "y": 64
+        },
+        {
+          "product": "Halo pendant",
+          "x": 50,
+          "y": 18
+        }
+      ]
+    },
+    {
+      "file": "/tmp/forme-field-assets/reading-corner.png",
+      "width": 1536,
+      "height": 1024,
+      "products": [
+        "Cove lounge chair",
+        "Plinth side table",
+        "Reed floor lamp"
+      ],
+      "source": "/Users/zakariyajabbar/.codex/generated_images/01a080ac-6151-7b30-9f33-a04c5dddc812/exec-5824fcb9-4e52-4fc7-9cb8-cdd2041cba68.png",
+      "prompt": "Use case: photorealistic-natural\nAsset type: premium furniture storefront shoppable reading corner scene, one landscape 3:2 interior photograph.\nInput image: supplied 3x2 featured master sheet defines exact products. Use TOP LEFT Cove lounge chair, BOTTOM LEFT Plinth travertine side table, BOTTOM RIGHT Reed floor lamp. Preserve their exact shapes, proportions, materials and details as though photographing the physical reference furniture on location.\nPrimary request: create a tranquil, lived-in architectural reading corner containing those exact three products. Warm chalk lime-plaster walls meet at a corner, pale oak floorboards, tall window just at far right admitting neutral afternoon light, full-height dark walnut door/panel on left. A small natural oatmeal wool rug beneath furniture. A single closed book with a blank cloth cover rests on the Plinth top to imply reading; one muted olive cushion may lean behind main chair back without obscuring its design. No other furniture.\nComposition: wider architectural environmental view, landscape 3:2 with entire room corner shown. Cove chair placed just right of center in front three-quarter view, whole chair including four oak legs and rounded open arms clearly visible. Plinth table on its left with cylinder and top clearly visible. Reed floor lamp slightly behind and to the right of chair, its dark bronze conical shade pointing towards seat, full slender stem and round base visible, no parts crossing the chair silhouette. Generous uncluttered plaster wall negative space in upper half and flooring foreground.\nIdentity invariants: chair has separate thick oatmeal linen seat and back cushions, solid natural pale oak long rounded open arm rails flowing into exposed wood legs and a low oak seat frame, identical to reference. Plinth is a simple pale porous travertine solid cylinder with flat round top, no legs. Reed is dark brushed bronze, a very slender vertical stem, small conical adjustable shade with short curved connector, circular weighted base. Do not redesign or add cushions that hide structure.\nStyle: highly realistic premium architectural editorial photograph, balanced verticals, gentle directional sunlight, true tactile materials, calm and warm but not orange, quiet naturally imperfect plaster. No dramatic HDR.\nConstraints: only these three furniture products, no sofa, no coffee table, no shelving, no people, no visible text, no logos, no watermark, no contact-sheet divisions. All three whole products clearly identifiable for shoppable hotspots.",
+      "references": [
+        {
+          "file": "/tmp/forme-field-assets/featured-primary-atlas.png",
+          "role": "Exact product identity reference"
+        }
+      ],
+      "qa": "Chair's oak frame, four legs and linen cushions readable; stone cylinder and bronze lamp complete. Small blank book and olive cushion are decor. Lamp base is partially adjacent to chair rear leg but clear enough to identify.",
+      "suggestedHotspotsPercent": [
+        {
+          "product": "Cove lounge chair",
+          "x": 59,
+          "y": 60
+        },
+        {
+          "product": "Plinth side table",
+          "x": 31,
+          "y": 69
+        },
+        {
+          "product": "Reed floor lamp",
+          "x": 76,
+          "y": 41
+        }
+      ]
+    }
+  ],
+  "assetCount": 9,
+  "nativeResolutionNote": "Built-in output was 1536x1024 for every atlas and room despite higher-resolution wording. Native square product cells are 512x512, below the approximately 700px target; do not claim 700px native detail or upscale as added detail.",
+  "fineDetailNote": "Reference-conditioned AI synthesis preserves principal visual identities; microtexture and unseen construction may vary. These are fictional product visualizations, not real technical product evidence."
+}

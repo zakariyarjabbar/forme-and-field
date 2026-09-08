@@ -1,0 +1,427 @@
+{
+  "date": "2026-09-08T12:06:36.624Z",
+  "browser": "152.0.7977.77",
+  "evidence": [
+    {
+      "route": "/",
+      "width": 1440,
+      "height": 1000,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/shop",
+      "width": 1440,
+      "height": 1000,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/products/cove-lounge-chair",
+      "width": 1440,
+      "height": 1000,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/cart",
+      "width": 1440,
+      "height": 1000,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/checkout",
+      "width": 1440,
+      "height": 1000,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/account",
+      "width": 1440,
+      "height": 1000,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/admin",
+      "width": 1440,
+      "height": 1000,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/shop",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/products/cove-lounge-chair",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/cart",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/checkout",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/account",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/admin",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/",
+      "width": 360,
+      "height": 800,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/shop",
+      "width": 360,
+      "height": 800,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/products/cove-lounge-chair",
+      "width": 360,
+      "height": 800,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/cart",
+      "width": 360,
+      "height": 800,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/checkout",
+      "width": 360,
+      "height": 800,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/account",
+      "width": 360,
+      "height": 800,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/admin",
+      "width": 360,
+      "height": 800,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/shop",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/products/cove-lounge-chair",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/cart",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/checkout",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/account",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/admin",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/",
+      "width": 1024,
+      "height": 900,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/shop",
+      "width": 1024,
+      "height": 900,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/products/cove-lounge-chair",
+      "width": 1024,
+      "height": 900,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/cart",
+      "width": 1024,
+      "height": 900,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/checkout",
+      "width": 1024,
+      "height": 900,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/account",
+      "width": 1024,
+      "height": 900,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    },
+    {
+      "route": "/admin",
+      "width": 1024,
+      "height": 900,
+      "overflow": false,
+      "fonts": [
+        "newsreader",
+        "newsreader",
+        "manrope"
+      ],
+      "brokenImages": []
+    }
+  ],
+  "errors": []
+}

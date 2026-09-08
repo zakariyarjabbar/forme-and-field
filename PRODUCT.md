@@ -1,0 +1,20 @@
+# FORME & FIELD
+
+A fictional contemporary furniture and lighting studio and agency portfolio demonstration. Design-conscious homeowners, interior designers and small hospitality studios should browse a memorable editorial store, place a simulated order, then operate its isolated merchant workspace. Brand line: Furniture, lighting, and the spaces between.
+
+## Brand commitments
+An architectural interiors publication with excellent shopping. Tactile oak, walnut, linen, wool, brushed metal, opal glass and stone. Confident, warm, precise, quietly expressive. No invented history, makers, clients, reviews, awards or sustainability claims. The detailed approved requirements are in docs/BRIEF.md.
+
+## Stack
+Web: Next.js App Router with supported React, TypeScript strict, npm, scoped/global semantic CSS, SQLite with Drizzle, Node runtime. Build locally; do not publish. No external credentials required.
+
+## Scope and flows
+24 products in seating, tables, lighting, storage, objects. Six featured products have primary, context and detail images. Three shoppable rooms and three complete journal stories. Homepage, shop, collections, products, rooms, journal, about, search, wishlist, cart, checkout, protected confirmation, account/orders, contact, care, delivery-returns, privacy, terms, demo and admin. URL filters and sorting; accessible gallery, material variants, stock, wishlist, cart drawer; server-persisted orders, addresses, inquiries, outbox and admin activity.
+
+Guest shopping receives an isolated anonymous workspace when saving or adding items. Enter demo account makes the existing workspace visible in customer/merchant views with a sample profile. Only its owner may read or mutate data. Sessions expire after seven days. Reset requires explicit confirmation and affects only that workspace.
+
+## Demo commerce rules
+USD cents. Standard delivery $75 below $1,500 merchandise, free at/above $1,500. White glove is a $150 alternative total fee. Prices include any applicable demo tax and no extra tax is added; this is a scenario assumption. Credential-free server payment simulator with success and decline. Atomic purchase and stock deduction, idempotency, immutable order snapshots, cancellation before shipment and exactly-once restocking/refund simulation.
+
+## Completion criteria
+All requirements in docs/BRIEF.md remain required. Final relevant assets, coherent responsive visual identity, no dead controls, persisted workflows and forms, no known cross-workspace leaks, tested price/stock/ownership invariants, type/lint/build pass, actual browser and performance evidence. No real transactions, external messages, production authentication, Stripe unless test credentials already exist, file uploads, domains or deployment.

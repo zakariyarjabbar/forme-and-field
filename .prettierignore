@@ -1,0 +1,8 @@
+node_modules
+.next
+data
+docs/qa
+playwright-report
+test-results
+package-lock.json
+docs/assets/generation-manifest.json

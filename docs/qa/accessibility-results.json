@@ -1,0 +1,92 @@
+[
+  {
+    "width": 1440,
+    "route": "/",
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "/shop",
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "/products/cove-lounge-chair",
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "/cart",
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "/checkout",
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "/contact",
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "/account",
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "/admin",
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "/rooms/quiet-living",
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "/",
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "/shop",
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "/products/cove-lounge-chair",
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "/cart",
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "/checkout",
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "/contact",
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "/account",
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "/admin",
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "/rooms/quiet-living",
+    "violations": []
+  }
+]

@@ -1,0 +1,31 @@
+
+> forme-and-field@1.0.0 test
+> tsx --test tests/*.test.ts
+
+✔ integer cents, exact shipping boundaries, alternative delivery and invalid values (1.599334ms)
+✔ invalid addresses fail the shared schema (1.178333ms)
+✔ rerunnable seed preserves workspace catalog edits and 24 distinct products (9.832583ms)
+✔ cart merges variants, validates quantity and preserves independent visitor data (11.108166ms)
+✔ successful simulator is persisted with exact totals, stock deduction and outbox (36.831541ms)
+✔ decline changes neither stock nor paid orders and repeated decline is idempotent (7.176625ms)
+✔ duplicate successful submission returns same order and does not deduct twice (5.885166ms)
+✔ price revalidation rejects tampered totals and archives cannot be checked out (5.104458ms)
+✔ immutable order snapshots survive catalog description and price changes (6.933625ms)
+✔ cancellation restores stock once with simulated refund; shipped cannot cancel (10.20625ms)
+✔ ownership protects order reads/mutations, inquiry updates and address changes (9.877916ms)
+✔ inquiry duplicate is stored once and reset touches only its owner (10.942916ms)
+✔ room add is atomic and rolls back the earlier line on an unavailable finish (3.602ms)
+✔ unknown variants, cross-product variant writes, and invalid asset sources fail (3.8865ms)
+✔ opaque session hashes, expiration rejection and cleanup (3.134042ms)
+✔ two simultaneous database connections competing for final stock create one paid order (474.8105ms)
+✔ repeated and malformed search query values normalize safely (1.474584ms)
+✔ public-origin verification rejects CSRF and supports the local bind address (0.732708ms)
+✔ cancellation restores stock after a merchant replenishes to the editing ceiling (7.563917ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1106.956666

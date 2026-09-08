@@ -1,0 +1,90 @@
+export type Category = 'Seating' | 'Tables' | 'Lighting' | 'Storage' | 'Objects';
+export type Variant = {
+  id: string;
+  sku: string;
+  name: string;
+  finish: string;
+  color: string;
+  price: number;
+  stock: number;
+  image: string;
+};
+export type Product = {
+  id: string;
+  slug: string;
+  name: string;
+  category: Category;
+  short: string;
+  description: string;
+  material: string;
+  dimensions: { width: number; depth: number; height: number };
+  care: string;
+  delivery: string;
+  images: string[];
+  featured: boolean;
+  archived: boolean;
+  variants: Variant[];
+  related: string[];
+};
+export type CartLine = {
+  variantId: string;
+  productId: string;
+  slug: string;
+  name: string;
+  image: string;
+  variant: string;
+  sku: string;
+  price: number;
+  quantity: number;
+  stock: number;
+  available: boolean;
+};
+export type DeliveryMethod = 'standard' | 'white-glove';
+export type OrderStatus = 'paid' | 'processing' | 'shipped' | 'delivered' | 'cancelled';
+export type Address = {
+  name: string;
+  email: string;
+  line1: string;
+  line2: string;
+  city: string;
+  region: string;
+  postal: string;
+  country: string;
+};
+export type Order = {
+  id: string;
+  reference: string;
+  status: OrderStatus;
+  createdAt: string;
+  subtotal: number;
+  shipping: number;
+  total: number;
+  delivery: DeliveryMethod;
+  address: Address;
+  lines: CartLine[];
+  refund: string | null;
+};
+export type StoreState = {
+  cart: CartLine[];
+  wishlist: string[];
+  hasWorkspace: boolean;
+  entered: boolean;
+};
+export type Room = {
+  slug: string;
+  title: string;
+  subtitle: string;
+  intro: string;
+  image: string;
+  body: string[];
+  products: { slug: string; quantity: number; x: number; y: number }[];
+};
+export type Article = {
+  slug: string;
+  title: string;
+  category: string;
+  readTime: string;
+  image: string;
+  intro: string;
+  sections: { title: string; body: string }[];
+};

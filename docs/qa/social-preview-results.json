@@ -1,0 +1,118 @@
+{
+  "checkedAt": "2026-09-08T16:10:35.763Z",
+  "origin": "http://localhost:3000",
+  "results": [
+    {
+      "agent": "Discordbot",
+      "route": "/",
+      "image": "http://localhost:3000/images/social/home.jpg",
+      "bytes": 163225,
+      "status": "passed"
+    },
+    {
+      "agent": "Discordbot",
+      "route": "/products/cove-lounge-chair",
+      "image": "http://localhost:3000/images/social/product-cove-lounge-chair.jpg",
+      "bytes": 77887,
+      "status": "passed"
+    },
+    {
+      "agent": "Discordbot",
+      "route": "/rooms/quiet-living",
+      "image": "http://localhost:3000/images/social/room-quiet-living.jpg",
+      "bytes": 160788,
+      "status": "passed"
+    },
+    {
+      "agent": "Discordbot",
+      "route": "/journal/the-character-of-oak",
+      "image": "http://localhost:3000/images/social/journal-the-character-of-oak.jpg",
+      "bytes": 66499,
+      "status": "passed"
+    },
+    {
+      "agent": "facebookexternalhit/1.1",
+      "route": "/",
+      "image": "http://localhost:3000/images/social/home.jpg",
+      "bytes": 163225,
+      "status": "passed"
+    },
+    {
+      "agent": "facebookexternalhit/1.1",
+      "route": "/products/cove-lounge-chair",
+      "image": "http://localhost:3000/images/social/product-cove-lounge-chair.jpg",
+      "bytes": 77887,
+      "status": "passed"
+    },
+    {
+      "agent": "facebookexternalhit/1.1",
+      "route": "/rooms/quiet-living",
+      "image": "http://localhost:3000/images/social/room-quiet-living.jpg",
+      "bytes": 160788,
+      "status": "passed"
+    },
+    {
+      "agent": "facebookexternalhit/1.1",
+      "route": "/journal/the-character-of-oak",
+      "image": "http://localhost:3000/images/social/journal-the-character-of-oak.jpg",
+      "bytes": 66499,
+      "status": "passed"
+    },
+    {
+      "agent": "Twitterbot",
+      "route": "/",
+      "image": "http://localhost:3000/images/social/home.jpg",
+      "bytes": 163225,
+      "status": "passed"
+    },
+    {
+      "agent": "Twitterbot",
+      "route": "/products/cove-lounge-chair",
+      "image": "http://localhost:3000/images/social/product-cove-lounge-chair.jpg",
+      "bytes": 77887,
+      "status": "passed"
+    },
+    {
+      "agent": "Twitterbot",
+      "route": "/rooms/quiet-living",
+      "image": "http://localhost:3000/images/social/room-quiet-living.jpg",
+      "bytes": 160788,
+      "status": "passed"
+    },
+    {
+      "agent": "Twitterbot",
+      "route": "/journal/the-character-of-oak",
+      "image": "http://localhost:3000/images/social/journal-the-character-of-oak.jpg",
+      "bytes": 66499,
+      "status": "passed"
+    },
+    {
+      "agent": "WhatsApp",
+      "route": "/",
+      "image": "http://localhost:3000/images/social/home.jpg",
+      "bytes": 163225,
+      "status": "passed"
+    },
+    {
+      "agent": "WhatsApp",
+      "route": "/products/cove-lounge-chair",
+      "image": "http://localhost:3000/images/social/product-cove-lounge-chair.jpg",
+      "bytes": 77887,
+      "status": "passed"
+    },
+    {
+      "agent": "WhatsApp",
+      "route": "/rooms/quiet-living",
+      "image": "http://localhost:3000/images/social/room-quiet-living.jpg",
+      "bytes": 160788,
+      "status": "passed"
+    },
+    {
+      "agent": "WhatsApp",
+      "route": "/journal/the-character-of-oak",
+      "image": "http://localhost:3000/images/social/journal-the-character-of-oak.jpg",
+      "bytes": 66499,
+      "status": "passed"
+    }
+  ]
+}

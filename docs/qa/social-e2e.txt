@@ -1,0 +1,19 @@
+
+> forme-and-field@1.0.0 test:e2e
+> playwright test
+
+
+Running 8 tests using 1 worker
+
+(node:21950) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/e2e/store.spec.ts:31:1 › shopping, URL filters, variant selection, persistent bag and wishlist (3.3s)
+  ✓  2 tests/e2e/store.spec.ts:75:1 › invalid checkout recovers values, decline preserves stock, purchase reaches account and merchant (6.3s)
+  ✓  3 tests/e2e/store.spec.ts:115:1 › two visitors, duplicate payment retries, direct-object authorization, cancellation and scoped reset (1.2s)
+  ✓  4 tests/e2e/store.spec.ts:187:1 › contact persists honestly, duplicate is handled, merchant can resolve and inspect acknowledgment (892ms)
+  ✓  5 tests/e2e/store.spec.ts:216:1 › merchant creates, edits, archives and restores a product with storefront propagation (1.4s)
+  ✓  6 tests/e2e/store.spec.ts:263:1 › mobile filters, keyboard dialog focus restoration, room shopping and no overflow (1.5s)
+  ✓  7 tests/e2e/store.spec.ts:303:1 › all specified public routes, invalid slugs and rendered images (2.6s)
+  ✓  8 tests/e2e/store.spec.ts:362:1 › automated accessibility scan on representative shopping and merchant surfaces (3.9s)
+
+  8 passed (22.8s)
