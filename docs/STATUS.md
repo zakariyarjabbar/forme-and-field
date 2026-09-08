@@ -14,7 +14,9 @@ The user's latest instruction replaces all database storage with local browser d
 - [x] Database-free application pushed to private GitHub and successfully deployed at https://forme-and-field.vercel.app.
 - [x] Live social previews: 16 bot/route checks passed.
 - [x] Final hydration guards and reliable demo-entry navigation passed all 11 local browser journeys.
-- Targeted live navigation and route rechecks are pending deployment of the final fixes.
+- [x] Final application commit d6556e8 successfully deployed on Vercel.
+- [x] Live shopping/finish selection, browser/tab isolation, cancellation/reset, all public routes/invalid slugs and image loading passed targeted rechecks. The other eight browser journeys passed the initial live run.
+- [x] All implementation and deployment work complete; remaining limitations are documented below.
 
 No Supabase/Neon account is needed. The Vercel deployment should use Next.js defaults, with NEXT_PUBLIC_SITE_URL set to the public origin or omitted for automatic detection. Remove stale database/cookie variables. Old local SQLite data is left on disk but unused and untracked.
 

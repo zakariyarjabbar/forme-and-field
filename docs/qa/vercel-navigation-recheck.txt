@@ -1,0 +1,71 @@
+
+Running 3 tests using 1 worker
+
+(node:26348) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 tests/e2e/store.spec.ts:37:1 › shopping, URL filters, variant selection, persistent bag and wishlist (35.0s)
+(node:26378) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  2 tests/e2e/store.spec.ts:121:1 › separate browsers, same-origin tabs, cancellation and local reset (1.1m)
+  ✘  3 tests/e2e/store.spec.ts:279:1 › all specified public routes, invalid slugs and rendered images (1.5m)
+
+
+  1) tests/e2e/store.spec.ts:37:1 › shopping, URL filters, variant selection, persistent bag and wishlist 
+
+    Error: expect(locator).toBeDisabled() failed
+
+    Locator: getByRole('button', { name: 'Unavailable', exact: true }).first()
+    Expected: disabled
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeDisabled" getByRole('button', { name: 'Unavailable', exact: true }).first() with timeout 10000ms
+      - waiting for getByRole('button', { name: 'Unavailable', exact: true }).first()
+
+
+      59 |   await expect(
+      60 |     page.getByRole('button', { name: 'Unavailable', exact: true }).first(),
+    > 61 |   ).toBeDisabled();
+         |     ^
+      62 |   await expect(page.getByText(/exact photograph of this finish is not available/)).toBeVisible();
+      63 |   await page.getByRole('button', { name: 'Oat linen / natural oak', exact: true }).click();
+      64 |   await page.getByRole('button', { name: 'Save for later', exact: true }).click();
+        at /Users/zakariyajabbar/Desktop/project1/tests/e2e/store.spec.ts:61:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/store-shopping-URL-filters-2e26f-persistent-bag-and-wishlist/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/store-shopping-URL-filters-2e26f-persistent-bag-and-wishlist/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/store-shopping-URL-filters-2e26f-persistent-bag-and-wishlist/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/store-shopping-URL-filters-2e26f-persistent-bag-and-wishlist/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) tests/e2e/store.spec.ts:279:1 › all specified public routes, invalid slugs and rendered images 
+
+    Error: browserContext.close: ENOENT: no such file or directory, open '/Users/zakariyajabbar/Desktop/project1/test-results/.playwright-artifacts-1/traces/142cdf6a1adeb8604bd3-1d48b98202fb6be789dc-recording4.network'
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/store-all-specified-public-08bb4-d-slugs-and-rendered-images/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/store-all-specified-public-08bb4-d-slugs-and-rendered-images/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/store-all-specified-public-08bb4-d-slugs-and-rendered-images/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/store-all-specified-public-08bb4-d-slugs-and-rendered-images/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    tests/e2e/store.spec.ts:37:1 › shopping, URL filters, variant selection, persistent bag and wishlist 
+    tests/e2e/store.spec.ts:279:1 › all specified public routes, invalid slugs and rendered images ─
+  1 passed (3.2m)
