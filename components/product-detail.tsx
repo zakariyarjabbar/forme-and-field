@@ -140,7 +140,11 @@ export function ProductDetail({ product: p }: { product: Product }) {
                 <Plus size={15} />
               </button>
             </div>
-            <button className="button primary" onClick={add} disabled={!v.stock || busy}>
+            <button
+              className="button primary"
+              onClick={add}
+              disabled={!v.stock || busy || !store.ready}
+            >
               {busy ? 'Adding…' : v.stock ? 'Add to bag' : 'Unavailable'}
               <ArrowRight size={18} />
             </button>
@@ -150,7 +154,12 @@ export function ProductDetail({ product: p }: { product: Product }) {
               {error}
             </p>
           )}
-          <button className="product-save" onClick={save} aria-pressed={saved}>
+          <button
+            className="product-save"
+            disabled={!store.ready}
+            onClick={save}
+            aria-pressed={saved}
+          >
             <Heart size={18} fill={saved ? 'currentColor' : 'none'} />
             {saved ? 'Saved to your wishlist' : 'Save for later'}
           </button>
@@ -239,7 +248,11 @@ export function ProductDetail({ product: p }: { product: Product }) {
           {p.name}
           <strong>{money(v.price)}</strong>
         </span>
-        <button className="button primary" disabled={!v.stock || busy} onClick={add}>
+        <button
+          className="button primary"
+          disabled={!v.stock || busy || !store.ready}
+          onClick={add}
+        >
           {busy ? 'Adding…' : v.stock ? 'Add to bag' : 'Unavailable'}
           <ArrowRight size={17} />
         </button>

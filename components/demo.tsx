@@ -1,13 +1,11 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 import { ArrowRight } from 'lucide-react';
 import { useStore } from './store-provider';
 import { Dialog } from './dialog';
 export function DemoEntry({ destination = '/account' }: { destination?: string }) {
   const store = useStore(),
-    router = useRouter(),
     [busy, setBusy] = useState(false),
     [error, setError] = useState(''),
     [reset, setReset] = useState(false);
@@ -16,7 +14,7 @@ export function DemoEntry({ destination = '/account' }: { destination?: string }
     setError('');
     try {
       await store.mutate({ action: 'enter' });
-      router.push(destination);
+      if (window.location.pathname !== destination) window.location.assign(destination);
     } catch (e) {
       setError((e as Error).message);
     } finally {
@@ -63,7 +61,7 @@ export function DemoEntry({ destination = '/account' }: { destination?: string }
             </Link>
           </>
         ) : (
-          <button className="button primary" onClick={enter} disabled={busy}>
+          <button className="button primary" onClick={enter} disabled={busy || !store.ready}>
             {busy ? 'Preparing your demo…' : 'Enter demo account'}
             <ArrowRight size={18} />
           </button>

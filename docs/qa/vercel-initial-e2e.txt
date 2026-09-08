@@ -1,0 +1,148 @@
+
+> forme-and-field@1.0.0 test:e2e
+> playwright test
+
+
+Running 11 tests using 1 worker
+
+(node:25181) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   1 tests/e2e/store.spec.ts:37:1 › shopping, URL filters, variant selection, persistent bag and wishlist (34.2s)
+(node:25241) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   2 tests/e2e/store.spec.ts:81:1 › invalid checkout recovers values, decline preserves stock, purchase reaches account and merchant (22.6s)
+  ✘   3 tests/e2e/store.spec.ts:121:1 › separate browsers, same-origin tabs, cancellation and local reset (26.9s)
+(node:25287) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   4 tests/e2e/store.spec.ts:163:1 › contact persists honestly, duplicate is handled, merchant can resolve and inspect acknowledgment (12.4s)
+  ✓   5 tests/e2e/store.spec.ts:192:1 › merchant creates, edits, archives and restores a product with storefront propagation (23.3s)
+  ✓   6 tests/e2e/store.spec.ts:239:1 › mobile filters, keyboard dialog focus restoration, room shopping and no overflow (28.1s)
+  ✘   7 tests/e2e/store.spec.ts:279:1 › all specified public routes, invalid slugs and rendered images (1.1m)
+(node:25515) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   8 tests/e2e/store.spec.ts:338:1 › automated accessibility scan on representative shopping and merchant surfaces (33.7s)
+  ✓   9 tests/e2e/store.spec.ts:365:1 › blocked storage reports errors without claiming a save (12.9s)
+  ✓  10 tests/e2e/store.spec.ts:381:1 › corrupt data needs explicit reset; clearing storage updates another tab (23.7s)
+  ✓  11 tests/e2e/store.spec.ts:410:1 › shopping mutations send no commerce requests and survive a fresh page (23.0s)
+
+
+  1) tests/e2e/store.spec.ts:37:1 › shopping, URL filters, variant selection, persistent bag and wishlist 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /sort=price-asc/
+    Received string:  "https://forme-and-field.vercel.app/shop?sort=featured&category=Seating"
+    Timeout: 10000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 10000ms
+        23 × locator resolved to <html lang="en" class="newsreader_1a4ded01-module__rms16G__variable manrope_6f1bd77a-module__z6ftnq__variable">…</html>
+           - unexpected value "https://forme-and-field.vercel.app/shop?sort=featured&category=Seating"
+
+
+      43 |   await expect(page.getByText('6 pieces', { exact: true })).toBeVisible();
+      44 |   await page.getByLabel('Sort pieces').selectOption('price-asc');
+    > 45 |   await expect(page).toHaveURL(/sort=price-asc/);
+         |                      ^
+      46 |   await page.reload();
+      47 |   await expect(page.getByText('6 pieces', { exact: true })).toBeVisible();
+      48 |   await page.getByRole('button', { name: 'Search pieces' }).click();
+        at /Users/zakariyajabbar/Desktop/project1/tests/e2e/store.spec.ts:45:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/store-shopping-URL-filters-2e26f-persistent-bag-and-wishlist/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/store-shopping-URL-filters-2e26f-persistent-bag-and-wishlist/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/store-shopping-URL-filters-2e26f-persistent-bag-and-wishlist/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/store-shopping-URL-filters-2e26f-persistent-bag-and-wishlist/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) tests/e2e/store.spec.ts:121:1 › separate browsers, same-origin tabs, cancellation and local reset 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('heading', { name: /Welcome back/ })
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('heading', { name: /Welcome back/ }) with timeout 10000ms
+      - waiting for getByRole('heading', { name: /Welcome back/ })
+
+
+      19 |   await page.goto('/demo');
+      20 |   await page.getByRole('button', { name: 'Enter demo account', exact: true }).click();
+    > 21 |   await expect(page.getByRole('heading', { name: /Welcome back/ })).toBeVisible();
+         |                                                                     ^
+      22 | }
+      23 | async function fillAddress(page: Page) {
+      24 |   for (const [key, value] of Object.entries(address)) {
+        at enter (/Users/zakariyajabbar/Desktop/project1/tests/e2e/store.spec.ts:21:69)
+        at /Users/zakariyajabbar/Desktop/project1/tests/e2e/store.spec.ts:127:3
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/store-separate-browsers-sa-62d4e-ancellation-and-local-reset/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/store-separate-browsers-sa-62d4e-ancellation-and-local-reset/test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/store-separate-browsers-sa-62d4e-ancellation-and-local-reset/test-failed-3.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/store-separate-browsers-sa-62d4e-ancellation-and-local-reset/error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/store-separate-browsers-sa-62d4e-ancellation-and-local-reset/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/store-separate-browsers-sa-62d4e-ancellation-and-local-reset/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) tests/e2e/store.spec.ts:279:1 › all specified public routes, invalid slugs and rendered images 
+
+    Test timeout of 60000ms exceeded.
+
+    Error: page.goto: net::ERR_ABORTED; maybe frame was detached?
+    Call log:
+      - navigating to "https://forme-and-field.vercel.app/collections/missing", waiting until "load"
+
+
+      316 |     '/journal/missing',
+      317 |   ]) {
+    > 318 |     await page.goto(route);
+          |                ^
+      319 |     await expect(page.getByRole('heading', { name: 'This page has moved out.' })).toBeVisible();
+      320 |   }
+      321 |   await page.goto('/');
+        at /Users/zakariyajabbar/Desktop/project1/tests/e2e/store.spec.ts:318:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/store-all-specified-public-08bb4-d-slugs-and-rendered-images/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/store-all-specified-public-08bb4-d-slugs-and-rendered-images/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/store-all-specified-public-08bb4-d-slugs-and-rendered-images/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/store-all-specified-public-08bb4-d-slugs-and-rendered-images/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3 failed
+    tests/e2e/store.spec.ts:37:1 › shopping, URL filters, variant selection, persistent bag and wishlist 
+    tests/e2e/store.spec.ts:121:1 › separate browsers, same-origin tabs, cancellation and local reset 
+    tests/e2e/store.spec.ts:279:1 › all specified public routes, invalid slugs and rendered images ─
+  8 passed (5.2m)

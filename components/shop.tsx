@@ -94,7 +94,7 @@ export function Shop({
       >
         <input type="hidden" name="q" value={filters.q || ''} />
         <input type="hidden" name="sort" value={sort} />
-        <fieldset className="filter-group">
+        <fieldset className="filter-group" disabled={!store.ready || isPending}>
           <legend>Category</legend>
           <label>
             <input name="category" value="" type="radio" defaultChecked={!filters.category} />
@@ -112,7 +112,7 @@ export function Shop({
             </label>
           ))}
         </fieldset>
-        <fieldset className="filter-group">
+        <fieldset className="filter-group" disabled={!store.ready || isPending}>
           <legend>Material</legend>
           <select name="material" aria-label="Material" defaultValue={filters.material || ''}>
             <option value="">All materials</option>
@@ -123,7 +123,7 @@ export function Shop({
             )}
           </select>
         </fieldset>
-        <fieldset className="filter-group">
+        <fieldset className="filter-group" disabled={!store.ready || isPending}>
           <legend>Availability</legend>
           {[
             ['', 'All pieces'],
@@ -142,7 +142,7 @@ export function Shop({
             </label>
           ))}
         </fieldset>
-        <fieldset className="filter-group">
+        <fieldset className="filter-group" disabled={!store.ready || isPending}>
           <legend>Price (USD)</legend>
           <div className="price-inputs">
             <label>
@@ -217,6 +217,7 @@ export function Shop({
               startTransition(() => router.push(`${pathname}?${q}`, { scroll: false }));
             }}
             aria-label="Sort pieces"
+            disabled={!store.ready || isPending}
           >
             <option value="featured">Our selection</option>
             <option value="price-asc">Price: low to high</option>

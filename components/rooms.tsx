@@ -176,7 +176,11 @@ export function RoomScene({ room, products: initial }: { room: Room; products: P
                   {error}
                 </p>
               )}
-              <button className="button primary full" onClick={add} disabled={!available || busy}>
+              <button
+                className="button primary full"
+                onClick={add}
+                disabled={!available || busy || !store.ready}
+              >
                 {busy
                   ? 'Adding pieces…'
                   : available

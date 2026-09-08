@@ -61,6 +61,7 @@ export function ProductCard({
           className={`icon-button save-button ${saved ? 'saved' : ''}`}
           aria-label={`${saved ? 'Unsave' : 'Save'} ${p.name}`}
           aria-pressed={saved}
+          disabled={!store.ready}
           onClick={wish}
         >
           <Heart size={19} fill={saved ? 'currentColor' : 'none'} />
@@ -125,7 +126,11 @@ export function ProductCard({
               {error}
             </p>
           )}
-          <button className="button primary full" disabled={busy || !v.stock} onClick={add}>
+          <button
+            className="button primary full"
+            disabled={busy || !v.stock || !store.ready}
+            onClick={add}
+          >
             {busy ? 'Adding…' : v.stock ? 'Add to bag' : 'Currently unavailable'}
             <ArrowRight size={18} />
           </button>

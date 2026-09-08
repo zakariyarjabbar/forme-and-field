@@ -5,18 +5,18 @@
 
 Running 11 tests using 1 worker
 
-(node:24837) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(node:26118) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
 (Use `node --trace-warnings ...` to show where the warning was created)
-  ✓   1 tests/e2e/store.spec.ts:37:1 › shopping, URL filters, variant selection, persistent bag and wishlist (3.1s)
+  ✓   1 tests/e2e/store.spec.ts:37:1 › shopping, URL filters, variant selection, persistent bag and wishlist (3.3s)
   ✓   2 tests/e2e/store.spec.ts:81:1 › invalid checkout recovers values, decline preserves stock, purchase reaches account and merchant (5.2s)
-  ✓   3 tests/e2e/store.spec.ts:121:1 › separate browsers, same-origin tabs, cancellation and local reset (3.0s)
-  ✓   4 tests/e2e/store.spec.ts:163:1 › contact persists honestly, duplicate is handled, merchant can resolve and inspect acknowledgment (789ms)
+  ✓   3 tests/e2e/store.spec.ts:121:1 › separate browsers, same-origin tabs, cancellation and local reset (3.2s)
+  ✓   4 tests/e2e/store.spec.ts:163:1 › contact persists honestly, duplicate is handled, merchant can resolve and inspect acknowledgment (810ms)
   ✓   5 tests/e2e/store.spec.ts:192:1 › merchant creates, edits, archives and restores a product with storefront propagation (1.2s)
   ✓   6 tests/e2e/store.spec.ts:239:1 › mobile filters, keyboard dialog focus restoration, room shopping and no overflow (1.5s)
   ✓   7 tests/e2e/store.spec.ts:279:1 › all specified public routes, invalid slugs and rendered images (2.5s)
-  ✓   8 tests/e2e/store.spec.ts:338:1 › automated accessibility scan on representative shopping and merchant surfaces (3.1s)
-  ✓   9 tests/e2e/store.spec.ts:365:1 › blocked storage reports errors without claiming a save (470ms)
+  ✓   8 tests/e2e/store.spec.ts:338:1 › automated accessibility scan on representative shopping and merchant surfaces (3.2s)
+  ✓   9 tests/e2e/store.spec.ts:365:1 › blocked storage reports errors without claiming a save (476ms)
   ✓  10 tests/e2e/store.spec.ts:381:1 › corrupt data needs explicit reset; clearing storage updates another tab (1.1s)
   ✓  11 tests/e2e/store.spec.ts:410:1 › shopping mutations send no commerce requests and survive a fresh page (1.0s)
 
-  11 passed (23.9s)
+  11 passed (24.9s)
