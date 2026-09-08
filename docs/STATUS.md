@@ -15,7 +15,7 @@
 - [x] Lighthouse mobile Performance 94 homepage / 94 product; zero measured CLS; actual reports retained.
 - [x] README, architecture, assets, QA, portfolio screenshots and factual case-study draft.
 
-Preview: `http://localhost:3000`. Run with `npm run dev`, or `npm run build` then `npm run start`. Enter `/demo` to explore customer and merchant views. Public GitHub repository creation/push was authorized by the user; website deployment remains unconfigured.
+Preview: `http://localhost:3000`. Run with `npm run dev`, or `npm run build` then `npm run start`. Enter `/demo` to explore customer and merchant views. The GitHub repository is private at the user’s request; website deployment remains unconfigured.
 
 Known limitations: native 512×512 product panels, finish swatches where exact alternate photography is absent, Chrome-only browser verification, seven-day demo identity instead of real authentication. External Stripe, email delivery and public hosting are unimplemented/unconfigured by the approved scope; the credential-free local default is complete.
 
@@ -25,5 +25,7 @@ Next action on a later session: read the project documents, verify the preview p
 
 - 31 branded 1200×630 JPEG cards, shared Open Graph/Twitter metadata and route-specific product/room/article previews implemented.
 - Chat-preview crawler exceptions preserve private route exclusions and general no-index policy.
-- Public repository: https://github.com/zakariyarjabbar/forme-and-field.
-- Actual website hosting and public-origin configuration are still required for external chat previews. GitHub's repository social image is a separate setting, documented in README.
+- Private repository: https://github.com/zakariyarjabbar/forme-and-field.
+- Actual website hosting and public-origin configuration are still required for external chat previews. Repository access is restricted to authorized GitHub accounts.
+
+The repository includes source, images, documentation, tests, package.json and package-lock.json. Installed node_modules, build output, local environment files and demo databases remain excluded.
